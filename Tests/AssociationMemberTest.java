@@ -19,6 +19,7 @@ public class AssociationMemberTest {
         League l2=(League) system.GetSpecificFromDB(1,"z");
         assertEquals("y",l1.getName());
         assertEquals("z",l2.getName());
+        system.ResetDB();
     }
 
     @Test
@@ -33,6 +34,7 @@ public class AssociationMemberTest {
         assertEquals(1990,s.getYear());
         s = l1.getSpecSeason(1991);
         assertEquals(1991,s.getYear());
+        system.ResetDB();
     }
 
     @Test
@@ -49,6 +51,7 @@ public class AssociationMemberTest {
         assertEquals("mainRef", ((League) system.GetSpecificFromDB(1,"y")).getLeagueReferees().get(0).getMember().getUser_name());
         assertEquals("lineRef", ((League) system.GetSpecificFromDB(1,"y")).getLeagueLinesmans().get(0).getMember().getUser_name());
         assertEquals("varRef", ((League) system.GetSpecificFromDB(1,"y")).getLeagueVarReferees().get(0).getMember().getUser_name());
+        system.ResetDB();
     }
 
     @Test
@@ -63,6 +66,7 @@ public class AssociationMemberTest {
         assertEquals(5,sp.getPointsPerWin());
         assertEquals(6,sp.getPointPerLoss());
         assertEquals(7,sp.getPointsPerDraw());
+        system.ResetDB();
     }
 
     @Test
@@ -75,6 +79,7 @@ public class AssociationMemberTest {
         League y=(League) system.GetSpecificFromDB(1,"y");
         SchedulingPolicy sp = y.getSpecSeason(1990).getSchedulingPolicy();
         assertEquals(5,sp.getNumOf2TeamsGames());
+        system.ResetDB();
     }
 
     @Test
@@ -88,6 +93,7 @@ public class AssociationMemberTest {
         assertEquals(5,sp.getPointsPerWin());
         assertEquals(6,sp.getPointPerLoss());
         assertEquals(7,sp.getPointsPerDraw());
+        system.ResetDB();
     }
 
     @Test
@@ -100,6 +106,7 @@ public class AssociationMemberTest {
         League y=(League) system.GetSpecificFromDB(1,"y");
         SchedulingPolicy sp = y.getSchedulingPolicy();
         assertEquals(5,sp.getNumOf2TeamsGames());
+        system.ResetDB();
     }
 
     @Test
@@ -108,9 +115,10 @@ public class AssociationMemberTest {
         AssociationMember associationMember=new AssociationMember(new Member("x",null,null,null));
         associationMember.NewLeague("y");
         associationMember.AddSeasonToLeague("y",1990);
-        associationMember.AddTeamToSeasonInLeague("y",1990,new Team("x",null,null));
+        associationMember.AddTeamToSeasonInLeague("y",1990,new Team("x",new TeamOwner(new Member("alona",null,null,"alona barkat")),null));
         League y=(League) system.GetSpecificFromDB(1,"y");
         assertEquals(y.getSpecSeason(1990).getRankings().getFirst().getKey().getTeam().getTeamName(),"x");
+        system.ResetDB();
     }
 
 }
