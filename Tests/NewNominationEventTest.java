@@ -1,0 +1,55 @@
+import Events.NewNominationEvent;
+import Game.Team;
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+import Events.*;
+import Jobs.*;
+import Game.*;
+import Association.*;
+import System.*;
+import User.*;
+
+public class NewNominationEventTest {
+
+    @Test
+    public void testToString() {
+        Team team = new Team("HBS",new TeamOwner(new Member("","","","roi")),null);
+        Member member = new Member(null,null,null,"toni wak");
+        NewNominationEvent newNominationEvent = new NewNominationEvent(team,member,"coach");
+        String eventString = member.getFull_name()
+                            +" appointed to the new "
+                            + "coach"
+                            + " of team " + team.getTeamName();
+        System.out.println(eventString);
+        assertEquals(eventString,newNominationEvent.toString());
+    }
+
+    @Test
+    public void testToString1() {
+        Team team = new Team("HBS",new TeamOwner(new Member("","","","roi")),null);
+        Member member = new Member(null,null,null,"toni wak");
+        NewNominationEvent newNominationEvent = new NewNominationEvent(team,member,"coach");
+        String eventString = member.getFull_name()
+                +" appointed to the new "
+                + "coach"
+                + " of team " + team.getTeamName();
+        newNominationEvent.setNomination("player");
+        assertNotEquals(eventString,newNominationEvent.toString());
+    }
+
+    @Test
+    public void testToString2() {
+        Team team = new Team("HBS",new TeamOwner(new Member("","","","roi")),null);
+        Member member = new Member(null,null,null,"toni wak");
+        NewNominationEvent newNominationEvent = new NewNominationEvent(team,member,"coach");
+        String eventString = member.getFull_name()
+                +" appointed to the new "
+                + "coach"
+                + " of team " + team.getTeamName();
+        newNominationEvent.setTeam(new Team("MTA",new TeamOwner(new Member("","","","roi")),null));
+        assertNotEquals(eventString,newNominationEvent.toString());
+    }
+
+
+}
