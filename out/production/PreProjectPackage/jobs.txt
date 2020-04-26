@@ -1,1 +1,1 @@
- ownerroei nullroei nullroei playerroei playertest ownerowner ownertest managereli ownereli ownereli owner
+test manager ownermemberTest ownerowner ownernotManager manager

@@ -17,6 +17,8 @@ public class CoachTest {
         assertTrue(coach.getTweets().contains("test"));
         coach.deleteTweet(0);
         assertFalse(coach.getTweets().contains("test"));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -33,6 +35,8 @@ public class CoachTest {
         coach.notifyObserver(new TewwtEvent("test"));
         coach.unregister(observer);
         assertFalse(coach.getObservers().contains(observer));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -49,12 +53,39 @@ public class CoachTest {
         assertEquals(null,coach.getTeam());
         assertEquals(null,coach.getJobInTheTeam());
         assertFalse(coach.removeFromTeam());
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
     public void CertificationTest(){
         Coach coach=new Coach(null,Coach.Certification.MainCoach);
         assertEquals(Coach.Certification.MainCoach,coach.getCertification());
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
+    }
+
+    @Test
+    public void setTest(){
+        MemberStub member = new MemberStub("test", "12345", "12345", "test");
+        Coach coach=new Coach(member,Coach.Certification.GoalkeeperCoach);
+        coach.editFullName("barda");
+        assertEquals("barda",coach.getMemberFullName());
+        coach.setCertification(2);
+        assertEquals(Coach.Certification.FitnessCoach,coach.getCertification());
+        coach.setJobInTheTeam("job");
+        assertEquals("job",coach.getJobInTheTeam());
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
+    }
+
+    public class MemberStub extends Member{
+        public MemberStub(String user_name,String user_password,String user_id,String full_name){
+            super(user_name,user_password, user_id, full_name);
+            AlphaSystem alphaSystem=AlphaSystem.getSystem();
+            alphaSystem.AddtoDB(2,this);
+        }
+
     }
 
 }
