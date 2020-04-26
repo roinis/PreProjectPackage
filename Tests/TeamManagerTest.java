@@ -14,7 +14,7 @@ public class TeamManagerTest {
 
     @Test
     public void teamManagerTest(){
-        MemberStub member = new MemberStub("test", "12345", "12345", "test");
+        MemberStub member = new MemberStub("owner", "12345", "12345", "test");
         boolean[] permissions1={true,true,true,true};
         TeamOwner teamOwner = new TeamOwner(member);
         Team team = new Team("hapoel", teamOwner, null);
@@ -26,13 +26,15 @@ public class TeamManagerTest {
             assertTrue(teamManager.getPermissions().contains(permissions));
         teamManager.removeAllPermissions();
         assertTrue(teamManager.getPermissions().isEmpty());
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
     public void openAndCloseTeamTest(){
         boolean[] permissions2={false,false,false,false};
         boolean[] permissions1={true,true,true,true};
-        MemberStub member = new MemberStub("test", "12345", "12345", "test");
+        MemberStub member = new MemberStub("owner", "12345", "12345", "test");
         TeamOwner teamOwner = new TeamOwner(member);
         Team team = new Team("hapoel", teamOwner, null);
         TeamManager teamManager=new TeamManager(member,team,choosePermissions(permissions2));
@@ -47,13 +49,15 @@ public class TeamManagerTest {
         teamManager.setPermissions(choosePermissions(permissions1));
         teamManager.openTeam();
         assertEquals(Team.Status.open,team.getStatus());
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
     public void budgetTest(){
         boolean[] permissions2={false,false,false,false};
         boolean[] permissions1={true,true,true,true};
-        MemberStub member = new MemberStub("test", "12345", "12345", "test");
+        MemberStub member = new MemberStub("owner", "12345", "12345", "test");
         TeamOwner teamOwner = new TeamOwner(member);
         Team team = new Team("hapoel", teamOwner, null);
         TeamManager teamManager=new TeamManager(member,team,choosePermissions(permissions2));
@@ -72,13 +76,15 @@ public class TeamManagerTest {
         teamManager.addDeposit((double) 500,"Deposit");
         assertTrue(400==budget.getBudget());
         assertTrue(budget.getReports().size()==2);
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
     public void tweetsTest(){
         boolean[] permissions2={false,false,false,false};
         boolean[] permissions1={true,true,true,true};
-        MemberStub member = new MemberStub("test", "12345", "12345", "test");
+        MemberStub member = new MemberStub("owner", "12345", "12345", "test");
         TeamOwner teamOwner = new TeamOwner(member);
         Team team = new Team("hapoel", teamOwner, null);
         TeamManager teamManager=new TeamManager(member,team,choosePermissions(permissions2));
@@ -93,6 +99,8 @@ public class TeamManagerTest {
         teamManager.setPermissions(choosePermissions(permissions1));
         teamManager.deleteTweet(0);
         assertFalse(team.getTweets().contains("test"));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -100,7 +108,7 @@ public class TeamManagerTest {
         LocalDate date=LocalDate.of(1992,07,23);
         boolean[] permissions2={false,false,false,false};
         boolean[] permissions1={true,true,true,true};
-        MemberStub member = new MemberStub("test", "12345", "12345", "test");
+        MemberStub member = new MemberStub("owner", "12345", "12345", "test");
         TeamOwner teamOwner = new TeamOwner(member);
         Team team = new Team("hapoel", teamOwner, null);
         TeamManager teamManager=new TeamManager(member,team,choosePermissions(permissions2));
@@ -140,13 +148,15 @@ public class TeamManagerTest {
         teamManager.setPermissions(choosePermissions(permissions1));
         teamManager.removeExistingPlayer("test");
         assertFalse(team.getPlayers().contains(player));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
     public void coachTest(){
         boolean[] permissions2={false,false,false,false};
         boolean[] permissions1={true,true,true,true};
-        MemberStub member = new MemberStub("test", "12345", "12345", "test");
+        MemberStub member = new MemberStub("owner", "12345", "12345", "test");
         TeamOwner teamOwner = new TeamOwner(member);
         Team team = new Team("hapoel", teamOwner, null);
         TeamManager teamManager=new TeamManager(member,team,choosePermissions(permissions2));
@@ -186,13 +196,15 @@ public class TeamManagerTest {
         teamManager.setPermissions(choosePermissions(permissions1));
         teamManager.removeExistingCoach("test");
         assertFalse(team.getCoaches().contains(coach));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
     public void stadiumTest(){
         boolean[] permissions2={false,false,false,false};
         boolean[] permissions1={true,true,true,true};
-        MemberStub member = new MemberStub("test", "12345", "12345", "test");
+        MemberStub member = new MemberStub("owner", "12345", "12345", "test");
         TeamOwner teamOwner = new TeamOwner(member);
         Stadium stadium1=new Stadium("test1","test1");
         Team team = new Team("hapoel", teamOwner, stadium1);
@@ -211,6 +223,39 @@ public class TeamManagerTest {
         teamManager.setPermissions(choosePermissions(permissions1));
         teamManager.setNewStadium("test2");
         assertEquals(stadium2,team.getHomeStadium());
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
+    }
+
+    @Test
+    public void setNameTest(){
+        MemberStub member = new MemberStub("owner", "12345", "12345", "test");
+        TeamManager teamManager=new TeamManager(member,null,null);
+        teamManager.setName("Good Name");
+        assertEquals("Good Name",teamManager.getMemberFullName());
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
+    }
+
+    @Test
+    public void SetManagersTest(){
+        boolean[] permissions2={false,false,false,false};
+        boolean[] permissions1={true,true,true,true};
+        MemberStub member = new MemberStub("owner", "12345", "12345", "test");
+        TeamOwner teamOwner = new TeamOwner(member);
+        Team team = new Team("hapoel", teamOwner, null);
+        TeamManager teamManager=new TeamManager(member,team,choosePermissions(permissions2));
+        MemberStub m_member = new MemberStub("test", "12345", "12345", "test");
+        TeamManager manager=new TeamManager(m_member,team,null);
+        team.getManagers().add(manager);
+        teamManager.editExistingManagerName("test","good test");
+        assertEquals("test",manager.getMemberFullName());
+        teamManager.setPermissions(choosePermissions(permissions1));
+        teamManager.editExistingManagerName("test","good test");
+        assertEquals("good test",manager.getMemberFullName());
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
+
     }
 
     public class MemberStub extends Member{
@@ -234,5 +279,6 @@ public class TeamManagerTest {
             permissions.add(TeamManager.Permissions.EDIT_PERSONAL_PAGE);
         return permissions;
     }
+
 
 }

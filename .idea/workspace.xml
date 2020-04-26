@@ -13,91 +13,28 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tests/TeamOwnerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="23" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/TeamManagerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Tests/TeamTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="284" selection-start-line="284" selection-end-line="284" />
+            <state relative-caret-position="629">
+              <caret line="210" column="29" selection-start-line="210" selection-start-column="29" selection-end-line="210" selection-end-column="29" />
               <folding>
-                <element signature="e#18425#18426#0" expanded="true" />
-                <element signature="e#18473#18474#0" expanded="true" />
+                <element signature="method#setTeamTest#0;class#TeamOwnerTest#0" />
+                <element signature="method#addAndRemoveOwnerTest#0;class#TeamOwnerTest#0" />
+                <element signature="method#openAndCloseTeamTest#0;class#TeamOwnerTest#0" />
+                <element signature="method#addAndRemoveManagersTest#0;class#TeamOwnerTest#0" />
+                <element signature="method#budgetTest#0;class#TeamOwnerTest#0" />
+                <element signature="method#tweetsTest#0;class#TeamOwnerTest#0" />
+                <element signature="method#playerTest#0;class#TeamOwnerTest#0" />
+                <element signature="method#coachTest#0;class#TeamOwnerTest#0" />
+                <element signature="method#stadiumTest#0;class#TeamOwnerTest#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Jobs/Player.java">
+        <entry file="file://$PROJECT_DIR$/Tests/BudgetTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="47" selection-start-line="47" selection-end-line="47" />
-              <folding>
-                <element signature="e#1180#1181#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Game/Team.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
-              <folding>
-                <element signature="e#1375#1376#0" expanded="true" />
-                <element signature="e#1411#1412#0" expanded="true" />
-                <element signature="e#1393#1624#0" />
-                <element signature="e#2047#2392#0" />
-                <element signature="e#2398#3072#0" />
-                <element signature="e#3078#3462#0" />
-                <element signature="e#3468#3990#0" />
-                <element signature="e#4058#4647#0" />
-                <element signature="e#4653#4721#0" />
-                <element signature="e#4727#4971#0" />
-                <element signature="e#5058#5198#0" />
-                <element signature="e#5204#5468#0" />
-                <element signature="e#5474#5753#0" />
-                <element signature="e#5759#5985#0" />
-                <element signature="e#5991#6287#0" />
-                <element signature="e#6293#6788#0" />
-                <element signature="e#6794#7046#0" />
-                <element signature="e#7052#7308#0" />
-                <element signature="e#7314#7907#0" />
-                <element signature="e#7913#8168#0" />
-                <element signature="e#8174#8427#0" />
-                <element signature="e#8433#8641#0" />
-                <element signature="e#8647#8849#0" />
-                <element signature="e#8855#9078#0" />
-                <element signature="e#9084#9688#0" />
-                <element signature="e#9694#10187#0" />
-                <element signature="e#10193#10543#0" />
-                <element signature="e#10549#10940#0" />
-                <element signature="e#10946#11323#0" />
-                <element signature="e#11329#11898#0" />
-                <element signature="e#11904#12387#0" />
-                <element signature="e#12393#12733#0" />
-                <element signature="e#12739#13134#0" />
-                <element signature="e#13140#13480#0" />
-                <element signature="e#13486#13855#0" />
-                <element signature="e#13861#14113#0" />
-                <element signature="e#14119#14545#0" />
-                <element signature="e#14551#14916#0" />
-              </folding>
+            <state relative-caret-position="272">
+              <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -105,8 +42,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tests/CoachTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="322">
+              <caret line="76" column="52" selection-start-line="76" selection-start-column="52" selection-end-line="76" selection-end-column="52" />
+              <folding>
+                <element signature="method#tweetsTest#0;class#CoachTest#0" />
+                <element signature="method#observerTest#0;class#CoachTest#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tests/jobTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -114,11 +64,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tests/PlayerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="56" selection-end-column="5" />
+            <state relative-caret-position="100">
+              <caret line="46" column="31" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tests/StadiumTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="24" selection-end-column="30" />
               <folding>
-                <element signature="e#1328#1329#0" expanded="true" />
-                <element signature="e#1376#1377#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Tests/TeamManagerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="240" column="33" selection-start-line="240" selection-start-column="33" selection-end-line="240" selection-end-column="33" />
+              <folding>
+                <element signature="method#teamManagerTest#0;class#TeamManagerTest#0" />
+                <element signature="method#openAndCloseTeamTest#0;class#TeamManagerTest#0" />
+                <element signature="method#budgetTest#0;class#TeamManagerTest#0" />
+                <element signature="method#tweetsTest#0;class#TeamManagerTest#0" />
+                <element signature="method#playerTest#0;class#TeamManagerTest#0" />
+                <element signature="method#coachTest#0;class#TeamManagerTest#0" />
+                <element signature="method#stadiumTest#0;class#TeamManagerTest#0" />
+                <element signature="method#setNameTest#0;class#TeamManagerTest#0" />
+                <element signature="method#SetManagersTest#0;class#TeamManagerTest#0" />
+                <element signature="class#MemberStub#0;class#TeamManagerTest#0" />
+                <element signature="method#choosePermissions#0;class#TeamManagerTest#0" />
               </folding>
             </state>
           </provider>
@@ -131,6 +111,18 @@
       <find>getStadiumName</find>
       <find>getCity</find>
       <find>fanObservers</find>
+      <find>getTeam</find>
+      <find>getStringBirthDate</find>
+      <find>setTeam</find>
+      <find>getPositionName</find>
+      <find>addTweet</find>
+      <find>deleteTweet</find>
+      <find>register</find>
+      <find>addToTeam</find>
+      <find>removeFromTeam</find>
+      <find>editFullName</find>
+      <find>editPosition</find>
+      <find>setCertification</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -142,7 +134,6 @@
         <option value="$PROJECT_DIR$/Tests/AlphaSystemTest.java" />
         <option value="$PROJECT_DIR$/Tests/AssociationMemberTest.java" />
         <option value="$PROJECT_DIR$/Tests/BudgetExceptionEventTest.java" />
-        <option value="$PROJECT_DIR$/Tests/CoachTest.java" />
         <option value="$PROJECT_DIR$/Tests/EndGameEventTest.java" />
         <option value="$PROJECT_DIR$/Tests/EventLogTest.java" />
         <option value="$PROJECT_DIR$/Tests/FootballGameTest.java" />
@@ -168,7 +159,6 @@
         <option value="$PROJECT_DIR$/Tests/StartGameEventTest.java" />
         <option value="$PROJECT_DIR$/Tests/SubstitutionEventTest.java" />
         <option value="$PROJECT_DIR$/Tests/TeamCloseEventTest.java" />
-        <option value="$PROJECT_DIR$/Tests/TeamManagerTest.java" />
         <option value="$PROJECT_DIR$/Tests/TeamReOpenEventTest.java" />
         <option value="$PROJECT_DIR$/Tests/TewwtEventTest.java" />
         <option value="$PROJECT_DIR$/Tests/UserInformationTest.java" />
@@ -176,15 +166,19 @@
         <option value="$PROJECT_DIR$/Tests/VisitorStub.java" />
         <option value="$PROJECT_DIR$/Tests/VisitorTest.java" />
         <option value="$PROJECT_DIR$/Tests/YellowCardEventTest.java" />
-        <option value="$PROJECT_DIR$/Tests/PlayerTest.java" />
         <option value="$PROJECT_DIR$/Tests/User2Test.java" />
-        <option value="$PROJECT_DIR$/Tests/TeamOwnerTest.java" />
         <option value="$PROJECT_DIR$/Tests/jobTest.java" />
         <option value="$PROJECT_DIR$/Tests/BudgetTest.java" />
         <option value="$PROJECT_DIR$/src/Game/Stadium.java" />
         <option value="$PROJECT_DIR$/Tests/StadiumTest.java" />
         <option value="$PROJECT_DIR$/src/Game/Team.java" />
         <option value="$PROJECT_DIR$/Tests/TeamTest.java" />
+        <option value="$PROJECT_DIR$/src/Jobs/TeamManager.java" />
+        <option value="$PROJECT_DIR$/Tests/PlayerTest.java" />
+        <option value="$PROJECT_DIR$/src/Jobs/Coach.java" />
+        <option value="$PROJECT_DIR$/Tests/CoachTest.java" />
+        <option value="$PROJECT_DIR$/Tests/TeamOwnerTest.java" />
+        <option value="$PROJECT_DIR$/Tests/TeamManagerTest.java" />
       </list>
     </option>
   </component>
@@ -214,12 +208,6 @@
             <path>
               <item name="PreProjectPackage" type="b2602c69:ProjectViewProjectNode" />
               <item name="PreProjectPackage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Game" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PreProjectPackage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PreProjectPackage" type="462c0819:PsiDirectoryNode" />
               <item name="Tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -237,7 +225,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587927414635" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587929746952" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -257,52 +245,59 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TeamTest.editExistingPlayerBirthday">
-    <configuration name="StadiumTest.stadiumDetailsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TeamOwnerTest">
+    <configuration name="BudgetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PreProjectPackage" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StadiumTest" />
-      <option name="METHOD_NAME" value="stadiumDetailsTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TeamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PreProjectPackage" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TeamTest" />
+      <option name="MAIN_CLASS_NAME" value="BudgetTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TeamTest.editExistingPlayerBirthday" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CoachTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PreProjectPackage" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TeamTest" />
-      <option name="METHOD_NAME" value="editExistingPlayerBirthday" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="CoachTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TeamTest.observerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PlayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PreProjectPackage" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TeamTest" />
-      <option name="METHOD_NAME" value="observerTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="PlayerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TeamOwnerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PreProjectPackage" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TeamOwnerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="jobTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PreProjectPackage" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="jobTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TeamTest.editExistingPlayerBirthday" />
-        <item itemvalue="JUnit.TeamTest" />
-        <item itemvalue="JUnit.TeamTest.observerTest" />
-        <item itemvalue="JUnit.StadiumTest.stadiumDetailsTest" />
+        <item itemvalue="JUnit.TeamOwnerTest" />
+        <item itemvalue="JUnit.BudgetTest" />
+        <item itemvalue="JUnit.CoachTest" />
+        <item itemvalue="JUnit.jobTest" />
+        <item itemvalue="JUnit.PlayerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -316,26 +311,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587925626761</updated>
-      <workItem from="1587925628243" duration="1846000" />
+      <workItem from="1587925628243" duration="4030000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StadiumTest_stadiumDetailsTest - 2020.04.26 at 21h 46m 27s.xml">
-      <configuration name="StadiumTest.stadiumDetailsTest" configurationId="JUnit" />
+    <history-entry file="TeamManagerTest - 2020.04.26 at 22h 15m 18s.xml">
+      <configuration name="TeamManagerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TeamTest_observerTest - 2020.04.26 at 21h 53m 16s.xml">
-      <configuration name="TeamTest.observerTest" configurationId="JUnit" />
+    <history-entry file="PlayerTest_settersTest - 2020.04.26 at 22h 16m 49s.xml">
+      <configuration name="PlayerTest.settersTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TeamTest_observerTest - 2020.04.26 at 21h 53m 59s.xml">
-      <configuration name="TeamTest.observerTest" configurationId="JUnit" />
+    <history-entry file="PlayerTest_settersTest - 2020.04.26 at 22h 20m 26s.xml">
+      <configuration name="PlayerTest.settersTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TeamTest - 2020.04.26 at 21h 54m 27s.xml">
-      <configuration name="TeamTest" configurationId="JUnit" />
+    <history-entry file="PlayerTest - 2020.04.26 at 22h 20m 57s.xml">
+      <configuration name="PlayerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PlayerTest_playerGettersTest - 2020.04.26 at 22h 21m 06s.xml">
+      <configuration name="PlayerTest.playerGettersTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PlayerTest - 2020.04.26 at 22h 21m 14s.xml">
+      <configuration name="PlayerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CoachTest_setTest - 2020.04.26 at 22h 29m 12s.xml">
+      <configuration name="CoachTest.setTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CoachTest - 2020.04.26 at 22h 29m 17s.xml">
+      <configuration name="CoachTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TeamOwnerTest_SetNameTest - 2020.04.26 at 22h 32m 27s.xml">
+      <configuration name="TeamOwnerTest.SetNameTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TeamOwnerTest - 2020.04.26 at 22h 32m 36s.xml">
+      <configuration name="TeamOwnerTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1846000" />
+    <option name="totallyTimeSpent" value="4030000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -346,7 +359,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -356,8 +369,8 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.46033993" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.46033993" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -375,34 +388,19 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Tests/TeamManagerTest.java</url>
+          <line>253</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Association/AssociationMember.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="5" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/AddCoachToTeamEventTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/AddPlayerToTeamEventTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/AlphaDatabaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -665,10 +663,115 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/jobTest.java">
+    <entry file="file://$PROJECT_DIR$/src/Game/Stadium.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        <state relative-caret-position="273">
+          <caret line="30" column="30" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/TeamTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2104">
+          <caret line="284" selection-start-line="284" selection-end-line="284" />
+          <folding>
+            <element signature="e#18425#18426#0" expanded="true" />
+            <element signature="e#18473#18474#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Jobs/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="160" column="38" selection-start-line="160" selection-start-column="26" selection-end-line="160" selection-end-column="38" />
+          <folding>
+            <element signature="method#Player#0;class#Player#0" />
+            <element signature="method#addTweet#0;class#Player#0" />
+            <element signature="method#unregister#0;class#Player#0" />
+            <element signature="method#notifyObserver#0;class#Player#0" />
+            <element signature="method#addToTeam#0;class#Player#0" />
+            <element signature="method#removeFromTeam#0;class#Player#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Team.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="471" selection-start-line="471" selection-end-line="471" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Jobs/TeamManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="149" selection-start-line="149" selection-end-line="149" />
+          <folding>
+            <element signature="method#TeamManager#0;class#TeamManager#0" />
+            <element signature="method#checkPermissions#0;class#TeamManager#0" />
+            <element signature="method#openTeam#0;class#TeamManager#0" />
+            <element signature="method#closeTeam#0;class#TeamManager#0" />
+            <element signature="method#addWithdraw#0;class#TeamManager#0" />
+            <element signature="method#addDeposit#0;class#TeamManager#0" />
+            <element signature="method#addTweet#0;class#TeamManager#0" />
+            <element signature="method#deleteTweet#0;class#TeamManager#0" />
+            <element signature="method#addNewPlayer#0;class#TeamManager#0" />
+            <element signature="method#removeExistingPlayer#0;class#TeamManager#0" />
+            <element signature="method#editExistingPlayerName#0;class#TeamManager#0" />
+            <element signature="method#editExistingPlayerPosition#0;class#TeamManager#0" />
+            <element signature="method#editExistingPlayerBirthday#0;class#TeamManager#0" />
+            <element signature="method#addNewCoach#0;class#TeamManager#0" />
+            <element signature="method#removeExistingCoach#0;class#TeamManager#0" />
+            <element signature="method#editExistingCoachName#0;class#TeamManager#0" />
+            <element signature="method#editExistingCoachCertification#0;class#TeamManager#0" />
+            <element signature="method#editExistingCoachJobInTeam#0;class#TeamManager#0" />
+            <element signature="method#editExistingStadiumName#0;class#TeamManager#0" />
+            <element signature="method#setNewStadium#0;class#TeamManager#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Jobs/Coach.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="101" column="63" selection-start-line="101" selection-start-column="51" selection-end-line="101" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Jobs/TeamOwner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-407">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="method#TeamOwner#0;class#TeamOwner#0" />
+            <element signature="method#addOwner#0;class#TeamOwner#0" />
+            <element signature="method#removeOwner#0;class#TeamOwner#0" />
+            <element signature="method#addManager#0;class#TeamOwner#0" />
+            <element signature="method#removeManger#0;class#TeamOwner#0" />
+            <element signature="method#checker#0;class#TeamOwner#0" />
+            <element signature="method#choosePermissions#0;class#TeamOwner#0" />
+            <element signature="method#addWithdraw#0;class#TeamOwner#0" />
+            <element signature="method#setPermissionsToManager#0;class#TeamOwner#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/TeamOwnerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="210" column="29" selection-start-line="210" selection-start-column="29" selection-end-line="210" selection-end-column="29" />
+          <folding>
+            <element signature="method#setTeamTest#0;class#TeamOwnerTest#0" />
+            <element signature="method#addAndRemoveOwnerTest#0;class#TeamOwnerTest#0" />
+            <element signature="method#openAndCloseTeamTest#0;class#TeamOwnerTest#0" />
+            <element signature="method#addAndRemoveManagersTest#0;class#TeamOwnerTest#0" />
+            <element signature="method#budgetTest#0;class#TeamOwnerTest#0" />
+            <element signature="method#tweetsTest#0;class#TeamOwnerTest#0" />
+            <element signature="method#playerTest#0;class#TeamOwnerTest#0" />
+            <element signature="method#coachTest#0;class#TeamOwnerTest#0" />
+            <element signature="method#stadiumTest#0;class#TeamOwnerTest#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -681,35 +784,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/CoachTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="322">
+          <caret line="76" column="52" selection-start-line="76" selection-start-column="52" selection-end-line="76" selection-end-column="52" />
+          <folding>
+            <element signature="method#tweetsTest#0;class#CoachTest#0" />
+            <element signature="method#observerTest#0;class#CoachTest#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/TeamManagerTest.java">
+    <entry file="file://$PROJECT_DIR$/Tests/jobTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="221">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Stadium.java">
+    <entry file="file://$PROJECT_DIR$/Tests/PlayerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="30" column="30" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/TeamOwnerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="23" selection-end-column="30" />
+        <state relative-caret-position="100">
+          <caret line="46" column="31" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/StadiumTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="221">
           <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="24" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -717,81 +817,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/PlayerTest.java">
+    <entry file="file://$PROJECT_DIR$/Tests/TeamManagerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="56" selection-end-column="5" />
+        <state relative-caret-position="476">
+          <caret line="240" column="33" selection-start-line="240" selection-start-column="33" selection-end-line="240" selection-end-column="33" />
           <folding>
-            <element signature="e#1328#1329#0" expanded="true" />
-            <element signature="e#1376#1377#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Team.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="e#1375#1376#0" expanded="true" />
-            <element signature="e#1411#1412#0" expanded="true" />
-            <element signature="e#1393#1624#0" />
-            <element signature="e#2047#2392#0" />
-            <element signature="e#2398#3072#0" />
-            <element signature="e#3078#3462#0" />
-            <element signature="e#3468#3990#0" />
-            <element signature="e#4058#4647#0" />
-            <element signature="e#4653#4721#0" />
-            <element signature="e#4727#4971#0" />
-            <element signature="e#5058#5198#0" />
-            <element signature="e#5204#5468#0" />
-            <element signature="e#5474#5753#0" />
-            <element signature="e#5759#5985#0" />
-            <element signature="e#5991#6287#0" />
-            <element signature="e#6293#6788#0" />
-            <element signature="e#6794#7046#0" />
-            <element signature="e#7052#7308#0" />
-            <element signature="e#7314#7907#0" />
-            <element signature="e#7913#8168#0" />
-            <element signature="e#8174#8427#0" />
-            <element signature="e#8433#8641#0" />
-            <element signature="e#8647#8849#0" />
-            <element signature="e#8855#9078#0" />
-            <element signature="e#9084#9688#0" />
-            <element signature="e#9694#10187#0" />
-            <element signature="e#10193#10543#0" />
-            <element signature="e#10549#10940#0" />
-            <element signature="e#10946#11323#0" />
-            <element signature="e#11329#11898#0" />
-            <element signature="e#11904#12387#0" />
-            <element signature="e#12393#12733#0" />
-            <element signature="e#12739#13134#0" />
-            <element signature="e#13140#13480#0" />
-            <element signature="e#13486#13855#0" />
-            <element signature="e#13861#14113#0" />
-            <element signature="e#14119#14545#0" />
-            <element signature="e#14551#14916#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Jobs/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="e#1180#1181#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/TeamTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="284" selection-start-line="284" selection-end-line="284" />
-          <folding>
-            <element signature="e#18425#18426#0" expanded="true" />
-            <element signature="e#18473#18474#0" expanded="true" />
+            <element signature="method#teamManagerTest#0;class#TeamManagerTest#0" />
+            <element signature="method#openAndCloseTeamTest#0;class#TeamManagerTest#0" />
+            <element signature="method#budgetTest#0;class#TeamManagerTest#0" />
+            <element signature="method#tweetsTest#0;class#TeamManagerTest#0" />
+            <element signature="method#playerTest#0;class#TeamManagerTest#0" />
+            <element signature="method#coachTest#0;class#TeamManagerTest#0" />
+            <element signature="method#stadiumTest#0;class#TeamManagerTest#0" />
+            <element signature="method#setNameTest#0;class#TeamManagerTest#0" />
+            <element signature="method#SetManagersTest#0;class#TeamManagerTest#0" />
+            <element signature="class#MemberStub#0;class#TeamManagerTest#0" />
+            <element signature="method#choosePermissions#0;class#TeamManagerTest#0" />
           </folding>
         </state>
       </provider>
