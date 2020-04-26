@@ -3,6 +3,12 @@ import org.junit.Test;
 import java.sql.Time;
 
 import static org.junit.Assert.*;
+import Game.*;
+import User.*;
+import System.*;
+import Jobs.*;
+import Events.*;
+import Association.*;
 
 public class StartGameEventTest {
 

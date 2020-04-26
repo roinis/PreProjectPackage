@@ -8,6 +8,12 @@ import Game.*;
 import Association.*;
 import System.*;
 import User.*;
+import Game.*;
+import User.*;
+import System.*;
+import Jobs.*;
+import Events.*;
+import Association.*;
 
 public class VisitorStub extends User {
 

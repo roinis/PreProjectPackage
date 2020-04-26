@@ -1,3 +1,4 @@
+import Events.Event;
 import org.junit.Test;
 
 import java.awt.*;
@@ -6,6 +7,12 @@ import java.io.InputStream;
 import java.time.LocalDate;
 
 import static org.junit.Assert.*;
+import Game.*;
+import User.*;
+import System.*;
+import Jobs.*;
+import Events.*;
+import Association.*;
 
 public class PlayerTest{
 

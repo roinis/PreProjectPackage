@@ -1,4 +1,10 @@
 import org.junit.Test;
+import Game.*;
+import User.*;
+import System.*;
+import Jobs.*;
+import Events.*;
+import Association.*;
 
 import java.sql.Time;
 

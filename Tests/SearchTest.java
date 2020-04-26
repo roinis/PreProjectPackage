@@ -2,6 +2,12 @@ import junit.framework.TestCase;
 import org.junit.Test;
 
 import java.util.List;
+import Game.*;
+import User.*;
+import System.*;
+import Jobs.*;
+import Events.*;
+import Association.*;
 
 public class SearchTest extends TestCase {
 

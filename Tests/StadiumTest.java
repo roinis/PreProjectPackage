@@ -3,7 +3,12 @@ import org.junit.Test;
 import java.io.*;
 
 import static org.junit.Assert.assertEquals;
-
+import Game.*;
+import User.*;
+import System.*;
+import Jobs.*;
+import Events.*;
+import Association.*;
 public class StadiumTest {
 
     @Test

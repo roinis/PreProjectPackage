@@ -3,7 +3,12 @@ import org.junit.Test;
 import java.time.LocalDateTime;
 
 import static org.junit.Assert.*;
-
+import Game.*;
+import User.*;
+import System.*;
+import Jobs.*;
+import Events.*;
+import Association.*;
 public class TeamReOpenEventTest {
 
     @Test
