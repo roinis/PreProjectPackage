@@ -20,5 +20,6 @@ public class VisitorTest {
         Random rand = new Random();
         int id_num = rand.nextInt(1000000);
         assertNotEquals(("user"+id_num),v.getUser_id_visitor());
+        AlphaSystem.getSystem().ResetDB();
     }
 }
