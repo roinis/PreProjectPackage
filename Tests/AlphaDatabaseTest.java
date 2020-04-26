@@ -27,35 +27,9 @@ public class AlphaDatabaseTest {
 
 
     @Test
-    public void GetSpecificTest(){
-        Member TestMember = new Member("","","","");
-        Member TestMember2 = new Member("","","","");
-        Member TestMember3 = new Member("","","","");
-        Member TestMember4 = new Member("","","","");
-        Member TestMember5 = new Member("","","","");
-        Member TestMember6 = new Member("","","","");
-        TeamOwner Owner = new TeamOwner(TestMember);
-        Coach TestCoach = new Coach(TestMember2, Coach.Certification.MainCoach);
-        TestMember.addJob(Owner);
-        League TestLeague = new League("TestLeague",null,null );
-        Stadium TestStadium = new Stadium("TestName", "TestCity");
-        Team NewTeam = new Team("TestTeam", Owner, TestStadium);
-        TeamManager TestManager = new TeamManager(TestMember3,NewTeam,null);
-        Player TestPlayer = new Player(TestMember4, Player.Position.ST,null);
-        AssociationMember AssTest = new AssociationMember(TestMember5);
-        Referee TestRef = new Referee(TestMember6);
-        AlphaSystem system = AlphaSystem.getSystem();
-        assertEquals(system.GetSpecificFromDB(4,"TestTeam"),NewTeam);
-        assertEquals(system.GetSpecificFromDB(4,"TestTeam"),NewTeam);
-        assertEquals(system.GetSpecificFromDB(4,"TestTeam"),NewTeam);
-        assertEquals(system.GetSpecificFromDB(4,"TestTeam"),NewTeam);
-        assertEquals(system.GetSpecificFromDB(4,"TestTeam"),NewTeam);
-        assertEquals(system.GetSpecificFromDB(4,"TestTeam"),NewTeam);
-        assertEquals(system.GetSpecificFromDB(4,"TestTeam"),NewTeam);
-    }
-
-    @Test
     public void LeagueDBTest(){
+        AlphaSystem system = AlphaSystem.getSystem();
+        system.ResetDB();
         League TestLeague = new League("TestLeague",null,null );
         AlphaDatabase TestDB = new AlphaDatabase();
         TestDB.AddtoDB(1,TestLeague);
@@ -67,6 +41,8 @@ public class AlphaDatabaseTest {
 
     @Test
     public void MemberDBTest(){
+        AlphaSystem system = AlphaSystem.getSystem();
+        system.ResetDB();
         Member TestMember = new Member("TestMember","","","");
         AlphaDatabase TestDB = new AlphaDatabase();
         TestDB.AddtoDB(2,TestMember);
@@ -77,6 +53,8 @@ public class AlphaDatabaseTest {
 
     @Test
     public void CoachDBTest(){
+        AlphaSystem system = AlphaSystem.getSystem();
+        system.ResetDB();
         Member TestMember = new Member("TestMember","","","");
         Coach TestCoach = new Coach(TestMember, Coach.Certification.MainCoach);
         AlphaDatabase TestDB = new AlphaDatabase();
@@ -88,6 +66,8 @@ public class AlphaDatabaseTest {
 
     @Test
     public void TeamDBTest(){
+        AlphaSystem system = AlphaSystem.getSystem();
+        system.ResetDB();
         Member TestMember = new Member("TestMember","","","");
         Stadium testStadium = new Stadium("","");
         TeamOwner Owner = new TeamOwner(TestMember);
@@ -101,6 +81,8 @@ public class AlphaDatabaseTest {
 
     @Test
     public void ManagerDBTest(){
+        AlphaSystem system = AlphaSystem.getSystem();
+        system.ResetDB();
         Member TestMember = new Member("TestMember","","","");
         Member TestMember2 = new Member("Test","","","");
         Stadium testStadium = new Stadium("","");
@@ -116,6 +98,8 @@ public class AlphaDatabaseTest {
 
     @Test
     public void OwnerDBTest(){
+        AlphaSystem system = AlphaSystem.getSystem();
+        system.ResetDB();
         Member TestMember = new Member("TestMember","","","");
         Stadium testStadium = new Stadium("","");
         TeamOwner Owner = new TeamOwner(TestMember);
@@ -129,6 +113,8 @@ public class AlphaDatabaseTest {
 
     @Test
     public void PlayerDBTest(){
+        AlphaSystem system = AlphaSystem.getSystem();
+        system.ResetDB();
         Member TestMember = new Member("TestMember","","","");
         Player testPlayer = new Player(TestMember,null,null);
         AlphaDatabase TestDB = new AlphaDatabase();
@@ -140,6 +126,8 @@ public class AlphaDatabaseTest {
 
     @Test
     public void AssDBTest(){
+        AlphaSystem system = AlphaSystem.getSystem();
+        system.ResetDB();
         Member TestMember = new Member("TestMember","","","");
         AssociationMember AssTest = new AssociationMember(TestMember);
         AlphaDatabase TestDB = new AlphaDatabase();
@@ -151,6 +139,8 @@ public class AlphaDatabaseTest {
 
     @Test
     public void RefDBTest(){
+        AlphaSystem system = AlphaSystem.getSystem();
+        system.ResetDB();
         Member TestMember = new Member("TestMember","","","");
         Referee Reftest = new Referee(TestMember);
         AlphaDatabase TestDB = new AlphaDatabase();
@@ -162,6 +152,8 @@ public class AlphaDatabaseTest {
 
     @Test
     public void TicketDBTest(){
+        AlphaSystem system = AlphaSystem.getSystem();
+        system.ResetDB();
         Member TestMember = new Member("TestMember","","","");
         Ticket TestTicket = new Ticket(TestMember,"");
         AlphaDatabase TestDB = new AlphaDatabase();
@@ -174,6 +166,8 @@ public class AlphaDatabaseTest {
 
     @Test
     public void StadiumDBTest(){
+        AlphaSystem system = AlphaSystem.getSystem();
+        system.ResetDB();
         Stadium TestStadium = new Stadium("Test","");
         AlphaDatabase TestDB = new AlphaDatabase();
         TestDB.AddtoDB(11,TestStadium);

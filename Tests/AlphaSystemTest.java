@@ -14,18 +14,20 @@ public class AlphaSystemTest {
 
     @Test
     public void GetSpecificFromDB(){
+        AlphaSystem system = AlphaSystem.getSystem();
+        system.ResetDB();
         Member TestMember = new Member("","","","");
         TeamOwner Owner = new TeamOwner(TestMember);
         TestMember.addJob(Owner);
         Stadium TestStadium = new Stadium("TestName", "TestCity");
         Team NewTeam = new Team("TestTeam", Owner, TestStadium);
-        AlphaSystem system = AlphaSystem.getSystem();
         assertEquals(system.GetSpecificFromDB(4,"TestTeam"),NewTeam);
     }
 
     @Test
     public void AddtoDBTest(){
         AlphaSystem system = AlphaSystem.getSystem();
+        system.ResetDB();
         assertEquals(0,((List<League>)system.GetAllFromDB(1)).size());
         League TestLeague = new League("",null,null);
         assertEquals(1,((List<League>)system.GetAllFromDB(1)).size());
@@ -33,8 +35,9 @@ public class AlphaSystemTest {
 
     @Test
     public void RemoveMemberTest(){
-        Member TestMember = new Member("","","","");
         AlphaSystem system = AlphaSystem.getSystem();
+        system.ResetDB();
+        Member TestMember = new Member("","","","");
         system.AddtoDB(2,TestMember);
         assertEquals(1,((List<League>)system.GetAllFromDB(2)).size());
         system.RemoveMember(TestMember);
@@ -44,9 +47,10 @@ public class AlphaSystemTest {
 
     @Test
     public void GetTicket(){
+        AlphaSystem system = AlphaSystem.getSystem();
+        system.ResetDB();
         Member TestMember = new Member("","","","");
         Ticket TestTicket = new Ticket(TestMember,"");
-        AlphaSystem system = AlphaSystem.getSystem();
         assertEquals(TestTicket,system.GetNextUnansweredTicket());
     }
 
