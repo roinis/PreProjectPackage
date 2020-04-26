@@ -22,6 +22,7 @@ public class AlphaSystemTest {
         Stadium TestStadium = new Stadium("TestName", "TestCity");
         Team NewTeam = new Team("TestTeam", Owner, TestStadium);
         assertEquals(system.GetSpecificFromDB(4,"TestTeam"),NewTeam);
+        system.ResetDB();
     }
 
     @Test
@@ -31,6 +32,7 @@ public class AlphaSystemTest {
         assertEquals(0,((List<League>)system.GetAllFromDB(1)).size());
         League TestLeague = new League("",null,null);
         assertEquals(1,((List<League>)system.GetAllFromDB(1)).size());
+        system.ResetDB();
     }
 
     @Test
@@ -42,6 +44,7 @@ public class AlphaSystemTest {
         assertEquals(1,((List<League>)system.GetAllFromDB(2)).size());
         system.RemoveMember(TestMember);
         assertEquals(0,((List<League>)system.GetAllFromDB(2)).size());
+        system.ResetDB();
     }
 
 
@@ -52,6 +55,7 @@ public class AlphaSystemTest {
         Member TestMember = new Member("","","","");
         Ticket TestTicket = new Ticket(TestMember,"");
         assertEquals(TestTicket,system.GetNextUnansweredTicket());
+        system.ResetDB();
     }
 
 

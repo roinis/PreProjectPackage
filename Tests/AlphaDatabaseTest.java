@@ -36,6 +36,7 @@ public class AlphaDatabaseTest {
         assertEquals(TestLeague,TestDB.Getspecific(1,"TestLeague"));
         assertEquals(((List)TestDB.GetAll(1)).size(),1);
         assertEquals(TestDB.CheckifExists(1,"TestLeague"),true);
+        system.ResetDB();
     }
 
 
@@ -49,6 +50,7 @@ public class AlphaDatabaseTest {
         assertEquals(TestMember,TestDB.Getspecific(2,"TestMember"));
         assertEquals(1,((List)TestDB.GetAll(2)).size());
         assertEquals(true,TestDB.CheckifExists(2,"TestMember"));
+        system.ResetDB();
     }
 
     @Test
@@ -62,6 +64,7 @@ public class AlphaDatabaseTest {
         assertEquals(TestCoach,TestDB.Getspecific(3,"TestMember"));
         assertEquals(1,((List)TestDB.GetAll(3)).size());
         assertEquals(true,TestDB.CheckifExists(3,"TestMember"));
+        system.ResetDB();
     }
 
     @Test
@@ -77,6 +80,7 @@ public class AlphaDatabaseTest {
         assertEquals(testTeam,TestDB.Getspecific(4,"Test"));
         assertEquals(1,((List)TestDB.GetAll(4)).size());
         assertEquals(true,TestDB.CheckifExists(4,"Test"));
+        system.ResetDB();
     }
 
     @Test
@@ -94,6 +98,7 @@ public class AlphaDatabaseTest {
         assertEquals(TestManager,TestDB.Getspecific(5,"Test"));
         assertEquals(1,((List)TestDB.GetAll(5)).size());
         assertEquals(true,TestDB.CheckifExists(5,"Test"));
+        system.ResetDB();
     }
 
     @Test
@@ -109,6 +114,7 @@ public class AlphaDatabaseTest {
         assertEquals(Owner,TestDB.Getspecific(6,"TestMember"));
         assertEquals(1,((List)TestDB.GetAll(6)).size());
         assertEquals(true,TestDB.CheckifExists(6,"TestMember"));
+        system.ResetDB();
     }
 
     @Test
@@ -122,6 +128,7 @@ public class AlphaDatabaseTest {
         assertEquals(testPlayer,TestDB.Getspecific(7,"TestMember"));
         assertEquals(1,((List)TestDB.GetAll(7)).size());
         assertEquals(true,TestDB.CheckifExists(7,"TestMember"));
+        system.ResetDB();
     }
 
     @Test
@@ -135,6 +142,7 @@ public class AlphaDatabaseTest {
         assertEquals(AssTest,TestDB.Getspecific(8,"TestMember"));
         assertEquals(1,((List)TestDB.GetAll(8)).size());
         assertEquals(true,TestDB.CheckifExists(8,"TestMember"));
+        system.ResetDB();
     }
 
     @Test
@@ -148,6 +156,7 @@ public class AlphaDatabaseTest {
         assertEquals(Reftest,TestDB.Getspecific(9,"TestMember"));
         assertEquals(1,((List)TestDB.GetAll(9)).size());
         assertEquals(true,TestDB.CheckifExists(9,"TestMember"));
+        system.ResetDB();
     }
 
     @Test
@@ -162,6 +171,7 @@ public class AlphaDatabaseTest {
         assertEquals(1,((List)TestDB.GetAll(10)).size());
         assertEquals(true,TestDB.CheckifExists(10,TestTicket.getTicketID()));
         assertEquals(TestTicket,TestDB.GetNextUnansweredTicket());
+        system.ResetDB();
     }
 
     @Test
@@ -174,6 +184,7 @@ public class AlphaDatabaseTest {
         assertEquals(TestStadium,TestDB.Getspecific(11,"Test"));
         assertEquals(1,((List)TestDB.GetAll(11)).size());
         assertEquals(true,TestDB.CheckifExists(11,"Test"));
+        system.ResetDB();
     }
 
 }
