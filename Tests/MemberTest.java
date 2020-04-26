@@ -104,16 +104,6 @@ public class MemberTest {
         AlphaSystem.getSystem().ResetDB();
     }
 
-    @Test
-    public void addRefereeTest2(){
-
-        Member m = new Member("roei","1234","12345","roei cohen");
-        Referee r = new Referee(m);
-        assertTrue(m.addReferee(r));
-        Player p = new Player(m, Player.Position.CF,LocalDate.of(1992,7,23));
-        assertFalse(m.addJob(p));
-        AlphaSystem.getSystem().ResetDB();
-    }
 
     @Test
     public void newComplaintTest1(){
@@ -267,5 +257,5 @@ public class MemberTest {
 
 
 
-    
+
 }
