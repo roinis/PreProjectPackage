@@ -1,19 +1,11 @@
-import Events.Event;
-import Events.TewwtEvent;
-import Game.Team;
 import org.junit.Test;
 
+import java.awt.*;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.time.LocalDate;
 
 import static org.junit.Assert.*;
-import Events.*;
-import Jobs.*;
-import Game.*;
-import Association.*;
-import System.*;
-import User.*;
 
 public class PlayerTest{
 

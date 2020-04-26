@@ -1,15 +1,10 @@
-import Game.*;
 import org.junit.Test;
 
+import java.security.acl.Owner;
 import java.time.LocalDateTime;
+import java.util.LinkedList;
 
 import static org.junit.Assert.*;
-import Events.*;
-import Jobs.*;
-import Game.*;
-import Association.*;
-import System.*;
-import User.*;
 
 public class FootballGameTest {
 

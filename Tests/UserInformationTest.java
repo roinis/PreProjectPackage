@@ -4,12 +4,6 @@ import org.junit.Test;
 import java.util.HashMap;
 
 import static org.junit.Assert.*;
-import Events.*;
-import Jobs.*;
-import Game.*;
-import Association.*;
-import System.*;
-import User.*;
 public class UserInformationTest {
 
 
@@ -36,7 +30,7 @@ public class UserInformationTest {
     public void readMembersInformationTest1(){
         UsersInformation usersInformation = new UsersInformation();
         usersInformation.editInformation(1,"roei","itay");
-        HashMap<String, Member> users = usersInformation.getMembers();
+        HashMap<String,Member> users = usersInformation.getMembers();
         assertTrue(users.containsKey("itay"));
     }
 
@@ -44,14 +38,14 @@ public class UserInformationTest {
     public void readMembersInformationTest2(){
         UsersInformation usersInformation = new UsersInformation();
         usersInformation.editInformation(2,"itay","0000");
-        HashMap<String, Member> users = usersInformation.getMembers();
+        HashMap<String,Member> users = usersInformation.getMembers();
         assertTrue(users.get("itay").getUser_password().equals("0000"));
     }
     @Test
     public void readMembersInformationTest3(){
         UsersInformation usersInformation = new UsersInformation();
         usersInformation.editInformation(3,"itay","204702");
-        HashMap<String, Member> users = usersInformation.getMembers();
+        HashMap<String,Member> users = usersInformation.getMembers();
         assertTrue(users.get("itay").getUser_id().equals("204702"));
     }
 
@@ -59,7 +53,7 @@ public class UserInformationTest {
     public void readMembersInformationTest4(){
         UsersInformation usersInformation = new UsersInformation();
         usersInformation.editInformation(4,"itay","itay levi");
-        HashMap<String, Member> users = usersInformation.getMembers();
+        HashMap<String,Member> users = usersInformation.getMembers();
         assertTrue(users.get("itay").getFull_name().equals("itay levi"));
     }
 
@@ -67,7 +61,7 @@ public class UserInformationTest {
     public void readMembersInformationTest5(){
         UsersInformation usersInformation = new UsersInformation();
         assertTrue(usersInformation.editInformation(1,"itay","roei"));
-        HashMap<String, Member> users = usersInformation.getMembers();
+        HashMap<String,Member> users = usersInformation.getMembers();
         assertTrue(users.get("roei").getFull_name().equals("itay levi"));
     }
 

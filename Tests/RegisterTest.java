@@ -6,12 +6,6 @@ import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 
 import static org.junit.Assert.*;
-import Events.*;
-import Jobs.*;
-import Game.*;
-import Association.*;
-import System.*;
-import User.*;
 public class RegisterTest {
 
     @Test

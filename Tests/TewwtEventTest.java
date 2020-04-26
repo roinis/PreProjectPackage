@@ -1,13 +1,6 @@
-import Events.TewwtEvent;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
-import Events.*;
-import Jobs.*;
-import Game.*;
-import Association.*;
-import System.*;
-import User.*;
 
 public class TewwtEventTest {
 
@@ -18,4 +11,16 @@ public class TewwtEventTest {
         assertEquals(tewwtEvent.toString(),"wattsup");
     }
 
+    @Test
+    public void getTewwt() {
+        TewwtEvent tewwtEvent = new TewwtEvent("wattsup");
+        assertEquals(tewwtEvent.getTewwt(),"wattsup");
+    }
+
+    @Test
+    public void setTewwt() {
+        TewwtEvent tewwtEvent = new TewwtEvent("wattsup");
+        tewwtEvent.setTewwt("check");
+        assertEquals(tewwtEvent.getTewwt(),"check");
+    }
 }

@@ -1,14 +1,8 @@
 import org.junit.Test;
 
 import java.time.LocalDate;
-import Events.*;
-import Jobs.*;
-import Game.*;
-import Association.*;
-import System.*;
-import User.*;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 public class jobTest {
 

@@ -1,6 +1,3 @@
-import Game.FootballGame;
-import Game.League;
-import Game.Team;
 import org.junit.Test;
 
 
@@ -8,15 +5,11 @@ import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.HashMap;
 import java.util.List;
 
 import static org.junit.Assert.*;
-import Events.*;
-import Jobs.*;
-import Game.*;
-import Association.*;
-import System.*;
-import User.*;
 public class MemberTest {
 
 

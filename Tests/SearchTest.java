@@ -1,16 +1,7 @@
-import Game.League;
-import Game.Stadium;
-import Game.Team;
 import junit.framework.TestCase;
 import org.junit.Test;
 
 import java.util.List;
-import Events.*;
-import Jobs.*;
-import Game.*;
-import Association.*;
-import System.*;
-import User.*;
 
 public class SearchTest extends TestCase {
 

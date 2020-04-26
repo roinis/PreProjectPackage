@@ -1,15 +1,8 @@
-import Game.Stadium;
 import org.junit.Test;
 
 import java.io.*;
 
 import static org.junit.Assert.assertEquals;
-import Events.*;
-import Jobs.*;
-import Game.*;
-import Association.*;
-import System.*;
-import User.*;
 
 public class StadiumTest {
 

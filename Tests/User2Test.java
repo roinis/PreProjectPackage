@@ -1,20 +1,12 @@
-import Game.*;
-import Jobs.LinesManReferee;
-import Jobs.VarReferee;
 import javafx.util.Pair;
 import org.junit.Test;
 
+import java.security.acl.Owner;
 import java.time.LocalDate;
 import java.util.LinkedList;
 import java.util.List;
 
 import static org.junit.Assert.*;
-import Events.*;
-import Jobs.*;
-import Game.*;
-import Association.*;
-import System.*;
-import User.*;
 
 public class User2Test {
 
@@ -28,7 +20,7 @@ public class User2Test {
         coach2.addToTeam(team,"Coach");
         coach3.addToTeam(team,"Coach");
 
-        User user = new VisitorStub();
+        User2 user = new VisitorStub();
         List<String> info = user.showCoachPrivateInfo("barak bahar");
         assertEquals(coach1.getMember().getFull_name(),info.get(0));
         assertEquals(coach1.getTeam().getTeamName(),info.get(1));
@@ -54,7 +46,7 @@ public class User2Test {
         TeamManager teamManager1 = new TeamManager(new Member("bol","","","bol"),team,null);
         TeamManager teamManager2 = new TeamManager(new Member("john","","","john"),team,null);
 
-        User user = new VisitorStub();
+        User2 user = new VisitorStub();
         List<String> info = user.showTeamManagerPrivateInfo("bol");
         assertEquals(teamManager1.getMember().getFull_name(),info.get(0));
         assertEquals(teamManager1.getTeam().getTeamName(),info.get(1));
@@ -69,7 +61,7 @@ public class User2Test {
     public void showLeagueScoringPolicy() {
         League league1 = new League("AL",new SchedulingPolicy(2),new ScoringPolicy(3,1,0));
         League league2 = new League("Pri",new SchedulingPolicy(3),new ScoringPolicy(4,2,1));
-        User user = new VisitorStub();
+        User2 user = new VisitorStub();
 
         List<String> info = user.showLeagueScoringPolicy("AL");
         assertEquals(String.valueOf(league1.getScoringPolicy().getPointsPerWin()),info.get(0));
@@ -89,7 +81,7 @@ public class User2Test {
         league1.addSeason(2018,new SchedulingPolicy(2),new ScoringPolicy(3,1,0));
         league1.addSeason(2019,new SchedulingPolicy(2),new ScoringPolicy(2,1,0));
         league1.addSeason(2020,new SchedulingPolicy(3),new ScoringPolicy(4,2,1));
-        User user = new VisitorStub();
+        User2 user = new VisitorStub();
 
         List<String> info = user.showLeagueSpecSeasonScoringPolicy("AL",2019);
         assertEquals("2",info.get(0));
@@ -116,7 +108,7 @@ public class User2Test {
         l.getSpecSeason(1990).addTeamToSeason(team1);
         l.getSpecSeason(1990).addTeamToSeason(team2);
         l.getSpecSeason(1990).addWin(team1,1,0);
-        User user=new VisitorStub();
+        User2 user=new VisitorStub();
         LinkedList<Pair<String, Integer>> ret = user.showLeagueTable("t1", 1990);
         assertEquals("x",ret.getFirst().getKey());
         assertEquals(new Integer(3),ret.getFirst().getValue());
@@ -130,7 +122,7 @@ public class User2Test {
         league1.addMainReferee(new MainReferee(new Member("Hakmon","","","Hakmon")));
         league1.addMainReferee(new MainReferee(new Member("molina","","","molina")));
         league1.addMainReferee(new MainReferee(new Member("liani","","","liani")));
-        User user = new VisitorStub();
+        User2 user = new VisitorStub();
 
         List<String> info = user.showLeagueMainReferees("AL");
         assertEquals(league1.getLeagueReferees().get(0).getMemberFullName(),info.get(0));
@@ -147,7 +139,7 @@ public class User2Test {
         league1.addVarReferee(new VarReferee(new Member("Hakmon","","","Hakmon")));
         league1.addVarReferee(new VarReferee(new Member("molina","","","molina")));
         league1.addVarReferee(new VarReferee(new Member("liani","","","liani")));
-        User user = new VisitorStub();
+        User2 user = new VisitorStub();
 
         List<String> info = user.showLeagueVarReferees("AL");
         assertEquals(league1.getLeagueVarReferees().get(0).getMemberFullName(),info.get(0));
@@ -161,7 +153,7 @@ public class User2Test {
         league1.addLinesManReferee(new LinesManReferee(new Member("Hakmon","","","Hakmon")));
         league1.addLinesManReferee(new LinesManReferee(new Member("molina","","","molina")));
         league1.addLinesManReferee(new LinesManReferee(new Member("liani","","","liani")));
-        User user = new VisitorStub();
+        User2 user = new VisitorStub();
 
         List<String> info = user.showLeagueLinesManReferees("AL");
         assertEquals(league1.getLeagueLinesmans().get(0).getMemberFullName(),info.get(0));
@@ -172,7 +164,7 @@ public class User2Test {
 
     @Test
     public void showTeamPlayers() {
-        User user = new VisitorStub();
+        User2 user = new VisitorStub();
         Player player1=new Player(new Member("ogu",null,null,"john ogu"), Player.Position.CDM, LocalDate.of(1990,11,11));
         Player player2=new Player(new Member("sahar",null,null,"ben sahar"), Player.Position.CDM, LocalDate.of(1990,11,11));
         Team team=new Team("Hbs",new TeamOwner(new Member("x",null,null,null)),null);
@@ -187,7 +179,7 @@ public class User2Test {
 
     @Test
     public void showTeamCoaches() {
-        User user = new VisitorStub();
+        User2 user = new VisitorStub();
         Coach coach1=new Coach(new Member("bachar",null,null,"barak bachar"), Coach.Certification.MainCoach);
         Coach coach2=new Coach(new Member("shimshon",null,null,"dror shimshon"), Coach.Certification.MainCoach);
         Team team=new Team("Hbs",new TeamOwner(new Member("x",null,null,null)),null);
@@ -207,7 +199,7 @@ public class User2Test {
 
     @Test
     public void showTeamOwners() {
-        User user=new VisitorStub();
+        User2 user=new VisitorStub();
         TeamOwner owner1=new TeamOwner(new Member("alona",null,null,"alona barkat"));
         MemberStub owner2=new MemberStub("eli",null,null,"eli barkat");
         Team team=new Team("hbs",owner1,null);
@@ -222,7 +214,7 @@ public class User2Test {
 
     @Test
     public void showTeamStadium() {
-        User user=new VisitorStub();
+        User2 user=new VisitorStub();
         TeamOwner owner1=new TeamOwner(new Member("alona",null,null,"alona barkat"));
         Stadium stadium=new Stadium("terner","x");
         Team team=new Team("hbs",owner1,stadium);
@@ -232,7 +224,7 @@ public class User2Test {
 
     @Test
     public void showPlayerTeam() {
-        User user = new VisitorStub();
+        User2 user = new VisitorStub();
         Player player=new Player(new Member("ogu",null,null,"john ogu"), Player.Position.CDM, LocalDate.of(1990,11,11));
         Team team=new Team("Hbs",new TeamOwner(new Member("x",null,null,null)),null);
         player.addToTeam(team);
@@ -242,7 +234,7 @@ public class User2Test {
 
     @Test
     public void showPlayerPosition() {
-        User user = new VisitorStub();
+        User2 user = new VisitorStub();
         Player player=new Player(new Member("ogu",null,null,"john ogu"), Player.Position.CDM, LocalDate.of(1990,11,11));
         Team team=new Team("Hbs",new TeamOwner(new Member("x",null,null,null)),null);
         player.addToTeam(team);
@@ -252,7 +244,7 @@ public class User2Test {
 
     @Test
     public void showPlayerBirthDate() {
-        User user = new VisitorStub();
+        User2 user = new VisitorStub();
         Player player=new Player(new Member("ogu",null,null,"john ogu"), Player.Position.CDM, LocalDate.of(1990,11,11));
         Team team=new Team("Hbs",new TeamOwner(new Member("x",null,null,null)),null);
         player.addToTeam(team);
@@ -260,10 +252,10 @@ public class User2Test {
         assertEquals("1990-11-11",user.showPlayerBirthDate("john ogu"));
     }
 
-    public class MemberStub extends Member {
+    public class MemberStub extends Member{
         public MemberStub(String user_name,String user_password,String user_id,String full_name){
             super(user_name,user_password, user_id, full_name);
-            AlphaSystem alphaSystem= AlphaSystem.getSystem();
+            AlphaSystem alphaSystem=AlphaSystem.getSystem();
             alphaSystem.AddtoDB(2,this);
         }
     }

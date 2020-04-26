@@ -1,18 +1,9 @@
 import java.util.List;
-
-import Association.AssociationMember;
-import Game.League;
-import Game.Stadium;
-import Game.Team;
 import org.junit.Test;
 
+import java.util.List;
+
 import static org.junit.Assert.*;
-import Events.*;
-import Jobs.*;
-import Game.*;
-import Association.*;
-import System.*;
-import User.*;
 
 public class AlphaDatabaseTest {
 //    List<League> Leagues;  //1

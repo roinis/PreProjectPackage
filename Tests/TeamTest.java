@@ -1,23 +1,14 @@
-import Association.Budget;
-import Game.Stadium;
-import Game.Team;
 import org.junit.Test;
 
 import java.util.ArrayList;
 
 import static org.junit.Assert.*;
-import Events.*;
-import Jobs.*;
-import Game.*;
-import Association.*;
-import System.*;
-import User.*;
 
 public class TeamTest {
 
     @Test
     public void setTeamNameTest(){
-        AlphaSystem system= AlphaSystem.getSystem();
+        AlphaSystem system=AlphaSystem.getSystem();
         Team team=new Team("xxx",new TeamOwner(new Member("alona",null,null,null)),null);
         team.setTeamName("hbs");
         Team teamFromDB=(Team)system.GetSpecificFromDB(4,"hbs");

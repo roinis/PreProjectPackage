@@ -1,18 +1,10 @@
-import Game.*;
-import Jobs.LinesManReferee;
-import Jobs.VarReferee;
 import javafx.util.Pair;
 import org.junit.Test;
 
+import java.security.acl.Owner;
 import java.util.LinkedList;
 
 import static org.junit.Assert.*;
-import Events.*;
-import Jobs.*;
-import Game.*;
-import Association.*;
-import System.*;
-import User.*;
 
 public class SeasonTest {
 

@@ -1,14 +1,9 @@
-import Association.Budget;
-import Game.Stadium;
-import Game.Team;
-import Jobs.TeamOwner;
 import org.junit.Test;
-import Events.*;
-import Jobs.*;
-import Game.*;
-import Association.*;
-import System.*;
-import User.*;
+
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.List;
 
 import static org.junit.Assert.*;
 
@@ -187,10 +182,10 @@ public class TeamOwnerTest {
 
 
 
-    public class MemberStub extends Member {
+    public class MemberStub extends Member{
         public MemberStub(String user_name,String user_password,String user_id,String full_name){
             super(user_name,user_password, user_id, full_name);
-            AlphaSystem alphaSystem= AlphaSystem.getSystem();
+            AlphaSystem alphaSystem=AlphaSystem.getSystem();
             alphaSystem.AddtoDB(2,this);
         }
 

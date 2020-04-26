@@ -1,13 +1,4 @@
-import Association.Budget;
-import Game.Stadium;
-import Game.Team;
 import org.junit.Test;
-import Events.*;
-import Jobs.*;
-import Game.*;
-import Association.*;
-import System.*;
-import User.*;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -217,10 +208,10 @@ public class TeamManagerTest {
         assertEquals(stadium2,team.getHomeStadium());
     }
 
-    public class MemberStub extends Member {
+    public class MemberStub extends Member{
         public MemberStub(String user_name,String user_password,String user_id,String full_name){
             super(user_name,user_password, user_id, full_name);
-            AlphaSystem alphaSystem= AlphaSystem.getSystem();
+            AlphaSystem alphaSystem=AlphaSystem.getSystem();
             alphaSystem.AddtoDB(2,this);
         }
 
