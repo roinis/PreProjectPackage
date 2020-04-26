@@ -27,12 +27,6 @@ public class Stadium {
         return city;
     }
 
-    public void editDetails() {
-        Scanner scanner=new Scanner(System.in);
-        System.out.println("please choose a new name");
-        String input=scanner.nextLine();
-        setStadiumName(input);
-    }
 
     public void setStadiumName(String stadiumName) {
         this.stadiumName = stadiumName;

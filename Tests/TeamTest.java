@@ -22,6 +22,8 @@ public class TeamTest {
         team.setStatus(Team.Status.close);
         team.setTeamName("yyy");
         assertEquals("hbs",teamFromDB.getTeamName());
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -32,6 +34,8 @@ public class TeamTest {
         assertEquals(newOwner,team.getOwners().get(1));
         team.setStatus(Team.Status.close);
         assertFalse(team.addOwner(newOwner));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -45,6 +49,8 @@ public class TeamTest {
         assertTrue(team.addOwner(newOwner));
         team.setStatus(Team.Status.close);
         assertFalse(team.removeOwner(newOwner));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -55,6 +61,8 @@ public class TeamTest {
         assertEquals(manager,team.getManagers().get(0));
         team.setStatus(Team.Status.close);
         assertFalse(team.addManager(manager));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -67,6 +75,8 @@ public class TeamTest {
         team.addManager(manager);
         team.setStatus(Team.Status.close);
         assertFalse(team.removeManager(manager));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -74,6 +84,8 @@ public class TeamTest {
         Team team=new Team("xxx",new TeamOwner(new Member("alona",null,null,"alona barkat")),null);
         assertFalse(team.setStatus(Team.Status.open));
         assertTrue(team.setStatus(Team.Status.close));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -83,6 +95,8 @@ public class TeamTest {
         assertEquals("vasermil",team.getHomeStadium().getStadiumName());
         team.setStatus(Team.Status.close);
         assertFalse(team.setHomeStadium(new Stadium("dalet","null")));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -92,6 +106,8 @@ public class TeamTest {
         assertEquals("abc",team.getTweets().get(0));
         team.setStatus(Team.Status.close);
         assertFalse(team.addTweet("xyz"));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -105,6 +121,8 @@ public class TeamTest {
         assertEquals("abc",team.getTweets().get(0));
         team.setStatus(Team.Status.close);
         assertFalse(team.deleteTweet(0));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -117,6 +135,8 @@ public class TeamTest {
         assertEquals(user,team.getFanObservers().get(0));
         team.setStatus(Team.Status.close);
         assertEquals(1,team.getFanObservers().size());
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -130,6 +150,8 @@ public class TeamTest {
         team.setStatus(Team.Status.close);
         team.unregister(user);
         assertEquals(1,team.getFanObservers().size());
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -144,6 +166,8 @@ public class TeamTest {
         assertTrue(team.registerSystemAdmin(admin));
         team.setStatus(Team.Status.close);
         assertFalse(team.registerSystemAdmin(admin));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -154,6 +178,8 @@ public class TeamTest {
         assertFalse(team.equals(p));
         Team team1=new Team("xyz",new TeamOwner(new Member("alona2",null,null,"alona barka2t")),new Stadium("terner","lod"));
         assertFalse(team.equals(team1));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -168,6 +194,8 @@ public class TeamTest {
         assertEquals(-15.0,ret,0);
         team.setStatus(Team.Status.close);
         assertFalse(team.addWithdraw(5d," nothing"));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -182,6 +210,8 @@ public class TeamTest {
         assertEquals(15.0,ret,0);
         team.setStatus(Team.Status.close);
         assertFalse(team.addDeposit(5d," nothing"));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -198,6 +228,8 @@ public class TeamTest {
         assertTrue(p1.getTeam().equals(team));
         team.setStatus(Team.Status.close);
         assertFalse(team.addNewPlayer("evyatar illuz"));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -212,6 +244,8 @@ public class TeamTest {
         assertEquals("tony",team.getPlayers().get(0).getMemberUserName());
         team.setStatus(Team.Status.close);
         assertFalse(team.removeExistingPlayer("tony"));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -224,6 +258,8 @@ public class TeamTest {
         assertFalse(team.editExistingPlayerName("zzz","bbb"));
         team.setStatus(Team.Status.close);
         assertFalse(team.editExistingPlayerName("ogu","john ugo banana"));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -236,6 +272,8 @@ public class TeamTest {
         assertFalse(team.editExistingPlayerPosition("zzz","bbb"));
         team.setStatus(Team.Status.close);
         assertFalse(team.editExistingPlayerName("ogu","john ugo banana"));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -248,6 +286,8 @@ public class TeamTest {
         assertFalse(team.editExistingPlayerPosition("zzz","bbb"));
         team.setStatus(Team.Status.close);
         assertFalse(team.editExistingPlayerName("ogu","john ugo banana"));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -259,6 +299,8 @@ public class TeamTest {
         assertFalse(team.addNewCoach("ogi","banana"));
         team.setStatus(Team.Status.close);
         assertFalse(team.addNewCoach("ogu","banana"));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -272,6 +314,8 @@ public class TeamTest {
         team.addNewCoach("ogu","banana");
         team.setStatus(Team.Status.close);
         assertFalse(team.removeExistingCoach("ogu"));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -284,6 +328,8 @@ public class TeamTest {
         assertFalse(team.editExistingCoachName("oga","ogi"));
         team.setStatus(Team.Status.close);
         assertFalse(team.editExistingCoachName("ogu","ogi"));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -296,6 +342,8 @@ public class TeamTest {
         assertFalse(team.editExistingCoachCertification("ogi",3));
         team.setStatus(Team.Status.close);
         assertFalse(team.editExistingCoachCertification("ogu",2));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -308,6 +356,8 @@ public class TeamTest {
         assertFalse(team.editExistingCoachJobInTeam("ogi","orange"));
         team.setStatus(Team.Status.close);
         assertFalse(team.editExistingCoachJobInTeam("ogu","orange"));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -320,6 +370,8 @@ public class TeamTest {
         assertFalse(team.editExistingManagerName("ogi","john ogi"));
         team.setStatus(Team.Status.close);
         assertFalse(team.editExistingManagerName("ogu","john ogu"));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -329,6 +381,8 @@ public class TeamTest {
         assertEquals("vasermil",team.getHomeStadium().getStadiumName());
         team.setStatus(Team.Status.close);
         assertFalse(team.editExistingStadiumName("terner"));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -340,6 +394,8 @@ public class TeamTest {
         assertFalse(team.setNewStadium("xxx"));
         team.setStatus(Team.Status.close);
         assertFalse(team.setNewStadium("terner"));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -354,7 +410,28 @@ public class TeamTest {
         assertEquals(2,manager.getPermissions().size());
         team.setStatus(Team.Status.close);
         assertFalse(team.setPermissionsToManager("ogu",perm));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
 
+    }
+
+    @Test
+    public void observerTest(){
+        Observer observer=new Observer() {
+            @Override
+            public void update(Event newEvent) {
+                assertTrue(true);
+            }
+        };
+        TeamOwner teamOwner=new TeamOwner(null);
+        Team team=new Team("hbs",teamOwner,null);
+        team.register(observer);
+        assertTrue(team.getFanObservers().contains(observer));
+        team.notifyObserver(new TewwtEvent("test"));
+        team.unregister(observer);
+        assertFalse(team.getFanObservers().contains(observer));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
 

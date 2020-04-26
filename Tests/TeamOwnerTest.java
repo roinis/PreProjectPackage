@@ -20,6 +20,8 @@ public class TeamOwnerTest {
         assertEquals(null,teamOwner.getTeam());
         Team team=new Team("hapoel",teamOwner,null);
         assertEquals(team,teamOwner.getTeam());
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test

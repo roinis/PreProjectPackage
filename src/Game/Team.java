@@ -45,6 +45,10 @@ public class Team implements Subject {
         alphaSystem.AddtoDB(4,this);
     }
 
+    public List<Observer> getJobsObservers() {
+        return jobsObservers;
+    }
+
     public String getTeamName() {
         return teamName;
     }
@@ -502,7 +506,6 @@ public class Team implements Subject {
         teamManager.setPermissions(permissionsList);
         return true;
     }
-
 
 }
 

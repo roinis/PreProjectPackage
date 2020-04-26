@@ -20,6 +20,8 @@ public class jobTest {
         assertEquals("test",job.getMemberUserName());
         assertEquals("gettersTest",job.getMemberFullName());
         assertEquals(member,job.getMember());
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
 }

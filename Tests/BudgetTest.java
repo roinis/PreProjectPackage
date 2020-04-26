@@ -21,6 +21,7 @@ public class BudgetTest {
         budget.addDeposit((double) 500,"Deposit");
         assertTrue(400==budget.getBudget());
         assertTrue(budget.getReports().size()==2);
-
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 }
