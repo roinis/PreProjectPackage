@@ -8,6 +8,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/PreProjectPackage$All_in_PreProjectPackage.ic" NAME="All in PreProjectPackage Coverage Results" MODIFIED="1587934026952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
@@ -19,11 +22,54 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tests/EventLogTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="93" column="34" lean-forward="true" selection-start-line="93" selection-start-column="34" selection-end-line="93" selection-end-column="34" />
+            <state relative-caret-position="483">
+              <caret line="103" column="1" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
+              <folding>
+                <element signature="e#2249#2250#0" expanded="true" />
+                <element signature="e#2297#2298#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Events/EventLog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="489">
+              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+              <folding>
+                <element signature="e#870#871#0" expanded="true" />
+                <element signature="e#921#922#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Jobs/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="605">
+              <caret line="160" column="38" selection-start-line="160" selection-start-column="26" selection-end-line="160" selection-end-column="38" />
+              <folding>
+                <element signature="method#Player#0;class#Player#0" />
+                <element signature="method#addTweet#0;class#Player#0" />
+                <element signature="method#unregister#0;class#Player#0" />
+                <element signature="method#notifyObserver#0;class#Player#0" />
+                <element signature="method#addToTeam#0;class#Player#0" />
+                <element signature="method#removeFromTeam#0;class#Player#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Jobs/Coach.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="101" column="63" selection-start-line="101" selection-start-column="51" selection-end-line="101" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -70,7 +116,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Tests/AddPlayerToTeamEventTest.java" />
         <option value="$PROJECT_DIR$/Tests/AlphaDatabaseTest.java" />
         <option value="$PROJECT_DIR$/Tests/AlphaSystemTest.java" />
         <option value="$PROJECT_DIR$/Tests/AssociationMemberTest.java" />
@@ -121,6 +166,7 @@
         <option value="$PROJECT_DIR$/Tests/MemberTest.java" />
         <option value="$PROJECT_DIR$/Tests/LoginTest.java" />
         <option value="$PROJECT_DIR$/Tests/EventLogTest.java" />
+        <option value="$PROJECT_DIR$/src/Events/EventLog.java" />
       </list>
     </option>
   </component>
@@ -150,6 +196,12 @@
             <path>
               <item name="PreProjectPackage" type="b2602c69:ProjectViewProjectNode" />
               <item name="PreProjectPackage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Events" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PreProjectPackage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PreProjectPackage" type="462c0819:PsiDirectoryNode" />
               <item name="Tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -167,7 +219,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587932038486" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587934061033" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -252,17 +304,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587925626761</updated>
-      <workItem from="1587925628243" duration="6290000" />
+      <workItem from="1587925628243" duration="7391000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_PreProjectPackage - 2020.04.26 at 22h 39m 22s.xml">
-      <configuration name="All in PreProjectPackage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EventLogTest - 2020.04.26 at 22h 45m 02s.xml">
-      <configuration name="EventLogTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_PreProjectPackage - 2020.04.26 at 22h 46m 45s.xml">
       <configuration name="All in PreProjectPackage" configurationId="JUnit" />
     </history-entry>
@@ -287,39 +333,46 @@
     <history-entry file="All_in_PreProjectPackage - 2020.04.26 at 23h 02m 17s.xml">
       <configuration name="All in PreProjectPackage" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_PreProjectPackage - 2020.04.26 at 23h 14m 28s.xml">
+      <configuration name="All in PreProjectPackage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_PreProjectPackage - 2020.04.26 at 23h 16m 10s.xml">
+      <configuration name="All in PreProjectPackage" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6290000" />
+    <option name="totallyTimeSpent" value="7391000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info id="Image Layers" />
       <window_info id="Designer" />
-      <window_info id="UI Designer" />
+      <window_info id="Image Layers" />
       <window_info id="Capture Tool" />
+      <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" weight="0.19971672" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.19971672" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.7223796" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.10339943" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
       <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Palette" />
       <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
       <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Coverage" side_tool="true" visible="true" weight="0.3295302" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -341,13 +394,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Tests/BudgetExceptionEventTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/EndGameEventTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -572,21 +618,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Jobs/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="160" column="38" selection-start-line="160" selection-start-column="26" selection-end-line="160" selection-end-column="38" />
-          <folding>
-            <element signature="method#Player#0;class#Player#0" />
-            <element signature="method#addTweet#0;class#Player#0" />
-            <element signature="method#unregister#0;class#Player#0" />
-            <element signature="method#notifyObserver#0;class#Player#0" />
-            <element signature="method#addToTeam#0;class#Player#0" />
-            <element signature="method#removeFromTeam#0;class#Player#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Game/Team.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
@@ -620,13 +651,6 @@
             <element signature="method#editExistingStadiumName#0;class#TeamManager#0" />
             <element signature="method#setNewStadium#0;class#TeamManager#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Jobs/Coach.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="101" column="63" selection-start-line="101" selection-start-column="51" selection-end-line="101" selection-end-column="63" />
         </state>
       </provider>
     </entry>
@@ -775,8 +799,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/EventLogTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="93" column="34" lean-forward="true" selection-start-line="93" selection-start-column="34" selection-end-line="93" selection-end-column="34" />
+        <state relative-caret-position="483">
+          <caret line="103" column="1" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
+          <folding>
+            <element signature="e#2249#2250#0" expanded="true" />
+            <element signature="e#2297#2298#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Events/EventLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="e#870#871#0" expanded="true" />
+            <element signature="e#921#922#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Jobs/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="160" column="38" selection-start-line="160" selection-start-column="26" selection-end-line="160" selection-end-column="38" />
+          <folding>
+            <element signature="method#Player#0;class#Player#0" />
+            <element signature="method#addTweet#0;class#Player#0" />
+            <element signature="method#unregister#0;class#Player#0" />
+            <element signature="method#notifyObserver#0;class#Player#0" />
+            <element signature="method#addToTeam#0;class#Player#0" />
+            <element signature="method#removeFromTeam#0;class#Player#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Jobs/Coach.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="101" column="63" selection-start-line="101" selection-start-column="51" selection-end-line="101" selection-end-column="63" />
         </state>
       </provider>
     </entry>
