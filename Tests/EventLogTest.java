@@ -18,6 +18,7 @@ public class EventLogTest {
     @Test
     public void addEvent() {
         AlphaSystem.getSystem().ResetDB();
+        AlphaSystem.getSystem().getLog().ResetLog();
         Time gameTime  = new Time(1,20,10);
         Team homeTeam = new Team ("Hapoel BS",new TeamOwner(new Member("","","","roi")),null);
         Team awayTeam = new Team ("Maccabi TA",new TeamOwner(new Member("","","","roi")),null);
@@ -37,6 +38,7 @@ public class EventLogTest {
     @Deprecated
     @Test
     public void removeEvent() {
+        AlphaSystem.getSystem().getLog().ResetLog();
         Time gameTime  = new Time(1,20,10);
         Team homeTeam = new Team ("Hapoel BS",new TeamOwner(new Member("","","","roi")),null);
         Team awayTeam = new Team ("Maccabi TA",new TeamOwner(new Member("","","","roi")),null);
@@ -63,6 +65,7 @@ public class EventLogTest {
 
     @Test
     public void getEvents() {
+        AlphaSystem.getSystem().getLog().ResetLog();
         Time gameTime  = new Time(1,20,10);
         Team homeTeam = new Team ("Hapoel BS",new TeamOwner(new Member("","","","roi")),null);
         Team awayTeam = new Team ("Maccabi TA",new TeamOwner(new Member("","","","roi")),null);
@@ -76,6 +79,7 @@ public class EventLogTest {
 
     @Test
     public void setEvents() {
+        AlphaSystem.getSystem().getLog().ResetLog();
         Time gameTime  = new Time(1,20,10);
         Team homeTeam = new Team ("Hapoel BS",new TeamOwner(new Member("","","","roi")),null);
         Team awayTeam = new Team ("Maccabi TA",new TeamOwner(new Member("","","","roi")),null);

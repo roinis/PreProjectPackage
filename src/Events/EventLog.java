@@ -36,5 +36,9 @@ public class EventLog {
         this.events = events;
     }
 
+    public void ResetLog(){
+        eventLog.events = new ArrayList<>();
+    }
+
 
 }
