@@ -22,7 +22,7 @@ public class EndGameEventTest {
         EndGameEvent endGameEvent = new EndGameEvent(gameTime,homeTeam,awayTeam);
         String eventString = "The match between " + homeTeam.getTeamName() + " and " + awayTeam.getTeamName() + " has ended.";
         assertEquals(endGameEvent.toString(),eventString);
-
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Deprecated
@@ -35,6 +35,7 @@ public class EndGameEventTest {
         endGameEvent.setAwayTeam(new Team("HSS",new TeamOwner(new Member("","","","roi")),null));
         String eventString = "The match between " + homeTeam.getTeamName() + " and " + awayTeam.getTeamName() + " has ended.";
         assertNotEquals(endGameEvent.toString(),eventString);
+        AlphaSystem.getSystem().ResetDB();
     }
 
 
@@ -46,6 +47,7 @@ public class EndGameEventTest {
         Team awayTeam = new Team ("Maccabi TA",new TeamOwner(new Member("","","","roi")),null);
         EndGameEvent endGameEvent = new EndGameEvent(gameTime,homeTeam,awayTeam);
         assertEquals(gameTime,endGameEvent.getEventGameTime());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -56,7 +58,7 @@ public class EndGameEventTest {
         EndGameEvent endGameEvent = new EndGameEvent(gameTime,homeTeam,awayTeam);
         endGameEvent.setEventGameTime(new Time(1,10,10));
         assertEquals(new Time(1,10,10),endGameEvent.getEventGameTime());
-
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -66,6 +68,7 @@ public class EndGameEventTest {
         Team awayTeam = new Team ("Maccabi TA",new TeamOwner(new Member("","","","roi")),null);
         EndGameEvent endGameEvent = new EndGameEvent(gameTime,homeTeam,awayTeam);
         assertEquals(homeTeam,endGameEvent.getHomeTeam());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -76,6 +79,7 @@ public class EndGameEventTest {
         EndGameEvent endGameEvent = new EndGameEvent(gameTime,homeTeam,awayTeam);
         endGameEvent.setHomeTeam(awayTeam);
         assertEquals(awayTeam,endGameEvent.getHomeTeam());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -85,6 +89,7 @@ public class EndGameEventTest {
         Team awayTeam = new Team ("Maccabi TA",new TeamOwner(new Member("","","","roi")),null);
         EndGameEvent endGameEvent = new EndGameEvent(gameTime,homeTeam,awayTeam);
         assertEquals(awayTeam,endGameEvent.getAwayTeam());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -95,5 +100,6 @@ public class EndGameEventTest {
         EndGameEvent endGameEvent = new EndGameEvent(gameTime,homeTeam,awayTeam);
         endGameEvent.setAwayTeam(homeTeam);
         assertEquals(homeTeam,endGameEvent.getAwayTeam());
+        AlphaSystem.getSystem().ResetDB();
     }
 }

@@ -19,6 +19,8 @@ public class SearchTest extends TestCase {
         Search search=new Search();
         List list=search.searchByName("x",true,false,false,false,false,false,false,false);
         assertEquals(tmp,list.get(0));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -28,16 +30,20 @@ public class SearchTest extends TestCase {
         Search search=new Search();
         List list=search.searchByName("t1",false,false,true,false,false,false,false,false);
         assertEquals(team1,list.get(0));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
     public void testSearchByName5() {
         AlphaDatabase alphaDatabase=new AlphaDatabase();
-        TeamManager tmp=new TeamManager(new Member(null,null,null,"x"),null,null);
+        TeamManager tmp=new TeamManager(new Member("y",null,null,"y"),null,null);
         alphaDatabase.AddtoDB(5,tmp);
         Search search=new Search();
-        List list=search.searchByName("x",false,false,false,true,false,false,false,false);
+        List list=search.searchByName("y",false,false,false,true,false,false,false,false);
         assertTrue(list.get(0) instanceof TeamManager);
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -46,6 +52,8 @@ public class SearchTest extends TestCase {
         Search search=new Search();
         List list=search.searchByName("x",false,false,false,false,true,false,false,false);
         assertTrue(list.get(0) instanceof TeamOwner);
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -54,6 +62,8 @@ public class SearchTest extends TestCase {
         Search search=new Search();
         List list=search.searchByName("x",false,false,false,false,false,true,false,false);
         assertTrue(list.get(0) instanceof Player);
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -62,6 +72,8 @@ public class SearchTest extends TestCase {
         Search search=new Search();
         List list=search.searchByName("x",false,false,false,false,false,false,true,false);
         assertTrue(list.get(0) instanceof Referee);
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -72,5 +84,7 @@ public class SearchTest extends TestCase {
         Search search=new Search();
         List list=search.searchByName("x",false,false,false,false,false,false,false,true);
         assertTrue(list.get(0) instanceof Stadium);
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 }

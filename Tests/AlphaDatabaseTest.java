@@ -27,56 +27,36 @@ public class AlphaDatabaseTest {
 
 
     @Test
-    public void GetSpecificTest(){
-        Member TestMember = new Member("","","","");
-        Member TestMember2 = new Member("","","","");
-        Member TestMember3 = new Member("","","","");
-        Member TestMember4 = new Member("","","","");
-        Member TestMember5 = new Member("","","","");
-        Member TestMember6 = new Member("","","","");
-        TeamOwner Owner = new TeamOwner(TestMember);
-        Coach TestCoach = new Coach(TestMember2, Coach.Certification.MainCoach);
-        TestMember.addJob(Owner);
-        League TestLeague = new League("TestLeague",null,null );
-        Stadium TestStadium = new Stadium("TestName", "TestCity");
-        Team NewTeam = new Team("TestTeam", Owner, TestStadium);
-        TeamManager TestManager = new TeamManager(TestMember3,NewTeam,null);
-        Player TestPlayer = new Player(TestMember4, Player.Position.ST,null);
-        AssociationMember AssTest = new AssociationMember(TestMember5);
-        Referee TestRef = new Referee(TestMember6);
-        AlphaSystem system = AlphaSystem.getSystem();
-        assertEquals(system.GetSpecificFromDB(4,"TestTeam"),NewTeam);
-        assertEquals(system.GetSpecificFromDB(4,"TestTeam"),NewTeam);
-        assertEquals(system.GetSpecificFromDB(4,"TestTeam"),NewTeam);
-        assertEquals(system.GetSpecificFromDB(4,"TestTeam"),NewTeam);
-        assertEquals(system.GetSpecificFromDB(4,"TestTeam"),NewTeam);
-        assertEquals(system.GetSpecificFromDB(4,"TestTeam"),NewTeam);
-        assertEquals(system.GetSpecificFromDB(4,"TestTeam"),NewTeam);
-    }
-
-    @Test
     public void LeagueDBTest(){
+        AlphaSystem system = AlphaSystem.getSystem();
+        system.ResetDB();
         League TestLeague = new League("TestLeague",null,null );
         AlphaDatabase TestDB = new AlphaDatabase();
         TestDB.AddtoDB(1,TestLeague);
         assertEquals(TestLeague,TestDB.Getspecific(1,"TestLeague"));
         assertEquals(((List)TestDB.GetAll(1)).size(),1);
         assertEquals(TestDB.CheckifExists(1,"TestLeague"),true);
+        system.ResetDB();
     }
 
 
     @Test
     public void MemberDBTest(){
+        AlphaSystem system = AlphaSystem.getSystem();
+        system.ResetDB();
         Member TestMember = new Member("TestMember","","","");
         AlphaDatabase TestDB = new AlphaDatabase();
         TestDB.AddtoDB(2,TestMember);
         assertEquals(TestMember,TestDB.Getspecific(2,"TestMember"));
         assertEquals(1,((List)TestDB.GetAll(2)).size());
         assertEquals(true,TestDB.CheckifExists(2,"TestMember"));
+        system.ResetDB();
     }
 
     @Test
     public void CoachDBTest(){
+        AlphaSystem system = AlphaSystem.getSystem();
+        system.ResetDB();
         Member TestMember = new Member("TestMember","","","");
         Coach TestCoach = new Coach(TestMember, Coach.Certification.MainCoach);
         AlphaDatabase TestDB = new AlphaDatabase();
@@ -84,10 +64,13 @@ public class AlphaDatabaseTest {
         assertEquals(TestCoach,TestDB.Getspecific(3,"TestMember"));
         assertEquals(1,((List)TestDB.GetAll(3)).size());
         assertEquals(true,TestDB.CheckifExists(3,"TestMember"));
+        system.ResetDB();
     }
 
     @Test
     public void TeamDBTest(){
+        AlphaSystem system = AlphaSystem.getSystem();
+        system.ResetDB();
         Member TestMember = new Member("TestMember","","","");
         Stadium testStadium = new Stadium("","");
         TeamOwner Owner = new TeamOwner(TestMember);
@@ -97,10 +80,13 @@ public class AlphaDatabaseTest {
         assertEquals(testTeam,TestDB.Getspecific(4,"Test"));
         assertEquals(1,((List)TestDB.GetAll(4)).size());
         assertEquals(true,TestDB.CheckifExists(4,"Test"));
+        system.ResetDB();
     }
 
     @Test
     public void ManagerDBTest(){
+        AlphaSystem system = AlphaSystem.getSystem();
+        system.ResetDB();
         Member TestMember = new Member("TestMember","","","");
         Member TestMember2 = new Member("Test","","","");
         Stadium testStadium = new Stadium("","");
@@ -112,10 +98,13 @@ public class AlphaDatabaseTest {
         assertEquals(TestManager,TestDB.Getspecific(5,"Test"));
         assertEquals(1,((List)TestDB.GetAll(5)).size());
         assertEquals(true,TestDB.CheckifExists(5,"Test"));
+        system.ResetDB();
     }
 
     @Test
     public void OwnerDBTest(){
+        AlphaSystem system = AlphaSystem.getSystem();
+        system.ResetDB();
         Member TestMember = new Member("TestMember","","","");
         Stadium testStadium = new Stadium("","");
         TeamOwner Owner = new TeamOwner(TestMember);
@@ -125,10 +114,13 @@ public class AlphaDatabaseTest {
         assertEquals(Owner,TestDB.Getspecific(6,"TestMember"));
         assertEquals(1,((List)TestDB.GetAll(6)).size());
         assertEquals(true,TestDB.CheckifExists(6,"TestMember"));
+        system.ResetDB();
     }
 
     @Test
     public void PlayerDBTest(){
+        AlphaSystem system = AlphaSystem.getSystem();
+        system.ResetDB();
         Member TestMember = new Member("TestMember","","","");
         Player testPlayer = new Player(TestMember,null,null);
         AlphaDatabase TestDB = new AlphaDatabase();
@@ -136,10 +128,13 @@ public class AlphaDatabaseTest {
         assertEquals(testPlayer,TestDB.Getspecific(7,"TestMember"));
         assertEquals(1,((List)TestDB.GetAll(7)).size());
         assertEquals(true,TestDB.CheckifExists(7,"TestMember"));
+        system.ResetDB();
     }
 
     @Test
     public void AssDBTest(){
+        AlphaSystem system = AlphaSystem.getSystem();
+        system.ResetDB();
         Member TestMember = new Member("TestMember","","","");
         AssociationMember AssTest = new AssociationMember(TestMember);
         AlphaDatabase TestDB = new AlphaDatabase();
@@ -147,10 +142,13 @@ public class AlphaDatabaseTest {
         assertEquals(AssTest,TestDB.Getspecific(8,"TestMember"));
         assertEquals(1,((List)TestDB.GetAll(8)).size());
         assertEquals(true,TestDB.CheckifExists(8,"TestMember"));
+        system.ResetDB();
     }
 
     @Test
     public void RefDBTest(){
+        AlphaSystem system = AlphaSystem.getSystem();
+        system.ResetDB();
         Member TestMember = new Member("TestMember","","","");
         Referee Reftest = new Referee(TestMember);
         AlphaDatabase TestDB = new AlphaDatabase();
@@ -158,10 +156,13 @@ public class AlphaDatabaseTest {
         assertEquals(Reftest,TestDB.Getspecific(9,"TestMember"));
         assertEquals(1,((List)TestDB.GetAll(9)).size());
         assertEquals(true,TestDB.CheckifExists(9,"TestMember"));
+        system.ResetDB();
     }
 
     @Test
     public void TicketDBTest(){
+        AlphaSystem system = AlphaSystem.getSystem();
+        system.ResetDB();
         Member TestMember = new Member("TestMember","","","");
         Ticket TestTicket = new Ticket(TestMember,"");
         AlphaDatabase TestDB = new AlphaDatabase();
@@ -170,16 +171,20 @@ public class AlphaDatabaseTest {
         assertEquals(1,((List)TestDB.GetAll(10)).size());
         assertEquals(true,TestDB.CheckifExists(10,TestTicket.getTicketID()));
         assertEquals(TestTicket,TestDB.GetNextUnansweredTicket());
+        system.ResetDB();
     }
 
     @Test
     public void StadiumDBTest(){
+        AlphaSystem system = AlphaSystem.getSystem();
+        system.ResetDB();
         Stadium TestStadium = new Stadium("Test","");
         AlphaDatabase TestDB = new AlphaDatabase();
         TestDB.AddtoDB(11,TestStadium);
         assertEquals(TestStadium,TestDB.Getspecific(11,"Test"));
         assertEquals(1,((List)TestDB.GetAll(11)).size());
         assertEquals(true,TestDB.CheckifExists(11,"Test"));
+        system.ResetDB();
     }
 
 }

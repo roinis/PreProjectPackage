@@ -23,6 +23,7 @@ public class YellowCardEventTest {
         String eventString = "The Player " + player.getMember().getFull_name() + " of team " + team.getTeamName()
                 + " Received Yellow Card at " + gameTime + ".";
         assertEquals(yellowCardEvent.toString(),eventString);
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Deprecated
@@ -36,6 +37,7 @@ public class YellowCardEventTest {
         String eventString = "The Player " + player.getMember().getFull_name() + " of team " + team.getTeamName()
                 + " Received Yellow Card at " + gameTime + ".";
         assertNotEquals(yellowCardEvent.toString(),eventString);
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Deprecated
@@ -49,6 +51,7 @@ public class YellowCardEventTest {
         String eventString = "The Player " + player.getMember().getFull_name() + " of team " + team.getTeamName()
                 + " Received Yellow Card at " + gameTime + ".";
         assertNotEquals(yellowCardEvent.toString(),eventString);
+        AlphaSystem.getSystem().ResetDB();
     }
 
 

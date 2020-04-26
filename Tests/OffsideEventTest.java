@@ -22,6 +22,7 @@ public class OffsideEventTest {
         String eventString = "The Player " + player.getMember().getFull_name()  + "of team " + team.getTeamName()
                             + " Committed an Offside on" + " at " + gameTime + ".";
         assertEquals(offsideEvent.toString(),eventString);
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Deprecated
@@ -36,6 +37,7 @@ public class OffsideEventTest {
                 + " Committed an Offside on" + " at " + gameTime + ".";
 
         assertNotEquals(eventString,offsideEvent.toString());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Deprecated
@@ -50,5 +52,6 @@ public class OffsideEventTest {
                 + " Committed an Offside on" + " at " + gameTime + ".";
 
         assertNotEquals(eventString,offsideEvent.toString());
+        AlphaSystem.getSystem().ResetDB();
     }
 }

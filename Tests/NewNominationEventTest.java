@@ -21,6 +21,7 @@ public class NewNominationEventTest {
                             + " of team " + team.getTeamName();
         System.out.println(eventString);
         assertEquals(eventString,newNominationEvent.toString());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -34,6 +35,7 @@ public class NewNominationEventTest {
                 + " of team " + team.getTeamName();
         newNominationEvent.setNomination("player");
         assertNotEquals(eventString,newNominationEvent.toString());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -47,6 +49,7 @@ public class NewNominationEventTest {
                 + " of team " + team.getTeamName();
         newNominationEvent.setTeam(new Team("MTA",new TeamOwner(new Member("","","","roi")),null));
         assertNotEquals(eventString,newNominationEvent.toString());
+        AlphaSystem.getSystem().ResetDB();
     }
 
 
@@ -56,6 +59,7 @@ public class NewNominationEventTest {
         Member member = new Member(null,null,null,"toni wak");
         NewNominationEvent newNominationEvent = new NewNominationEvent(team,member,"coach");
         assertEquals(member,newNominationEvent.getMember());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -64,6 +68,7 @@ public class NewNominationEventTest {
         Member member = new Member(null,null,null,"toni wak");
         NewNominationEvent newNominationEvent = new NewNominationEvent(team,member,"coach");
         assertEquals(team,newNominationEvent.getTeam());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -74,6 +79,7 @@ public class NewNominationEventTest {
         NewNominationEvent newNominationEvent = new NewNominationEvent(team,member,"coach");
         newNominationEvent.setTeam(team1);
         assertEquals(team1,newNominationEvent.getTeam());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -84,7 +90,7 @@ public class NewNominationEventTest {
         NewNominationEvent newNominationEvent = new NewNominationEvent(team,member,"coach");
         newNominationEvent.setMember(member1);
         assertEquals(member1,newNominationEvent.getMember());
-
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -93,6 +99,7 @@ public class NewNominationEventTest {
         Member member = new Member(null,null,null,"toni wak");
         NewNominationEvent newNominationEvent = new NewNominationEvent(team,member,"coach");
         assertEquals("coach",newNominationEvent.getNomination());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -102,5 +109,6 @@ public class NewNominationEventTest {
         NewNominationEvent newNominationEvent = new NewNominationEvent(team,member,"coach");
         newNominationEvent.setNomination("ch1");
         assertEquals("ch1",newNominationEvent.getNomination());
+        AlphaSystem.getSystem().ResetDB();
     }
 }

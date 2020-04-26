@@ -1,6 +1,6 @@
 package Events;
 import Game.*;
-
+import System.*;
 
 import java.time.LocalDateTime;
 
@@ -29,7 +29,7 @@ public class GameDelayedEvent implements Event {
 
     @Override
     public void addEventToLog() {
-        //AlphaSystem.getSystem().getLog().addEvent(this);
+        AlphaSystem.getSystem().getLog().addEvent(this);
     }
 
     public LocalDateTime getGameOriginalTime() {

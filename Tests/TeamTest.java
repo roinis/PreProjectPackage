@@ -221,13 +221,13 @@ public class TeamTest {
         Player p2=new Player(new Member("tony",null,null,"tony nwakeme"),null,null);
         Player p3=new Player(new Member("illuz",null,null,"evyatar illuz"),null,null);
 
-        assertTrue(team.addNewPlayer("john ogu"));
-        assertTrue(team.addNewPlayer("tony nwakeme"));
+        assertTrue(team.addNewPlayer("ogu"));
+        assertTrue(team.addNewPlayer("tony"));
         assertFalse(team.addNewPlayer("sahar"));
         assertEquals(2,team.getPlayers().size());
         assertTrue(p1.getTeam().equals(team));
         team.setStatus(Team.Status.close);
-        assertFalse(team.addNewPlayer("evyatar illuz"));
+        assertFalse(team.addNewPlayer("illuz"));
         AlphaSystem alphaSystem=AlphaSystem.getSystem();
         alphaSystem.ResetDB();
     }
@@ -237,8 +237,8 @@ public class TeamTest {
         Team team=new Team("xxx",new TeamOwner(new Member("alona",null,null,"alona barkat")),new Stadium("terner","lod"));
         Player p1=new Player(new Member("ogu",null,null,"john ogu"),null,null);
         Player p2=new Player(new Member("tony",null,null,"tony nwakeme"),null,null);
-        team.addNewPlayer("john ogu");
-        team.addNewPlayer("tony nwakeme");
+        team.addNewPlayer("ogu");
+        team.addNewPlayer("tony");
         assertTrue(team.removeExistingPlayer("ogu"));
         assertEquals(1,team.getPlayers().size());
         assertEquals("tony",team.getPlayers().get(0).getMemberUserName());
@@ -252,7 +252,7 @@ public class TeamTest {
     public void editExistingPlayerName(){
         Team team=new Team("xxx",new TeamOwner(new Member("alona",null,null,"alona barkat")),new Stadium("terner","lod"));
         Player p1=new Player(new Member("ogu",null,null,"john ogu"),null,null);
-        team.addNewPlayer("john ogu");
+        team.addNewPlayer("ogu");
         team.editExistingPlayerName("ogu","john ugo");
         assertEquals("john ugo",p1.getMemberFullName());
         assertFalse(team.editExistingPlayerName("zzz","bbb"));
@@ -266,7 +266,7 @@ public class TeamTest {
     public void editExistingPlayerPosition(){
         Team team=new Team("xxx",new TeamOwner(new Member("alona",null,null,"alona barkat")),new Stadium("terner","lod"));
         Player p1=new Player(new Member("ogu",null,null,"john ogu"),null,null);
-        team.addNewPlayer("john ogu");
+        team.addNewPlayer("ogu");
         team.editExistingPlayerPosition("ogu","CDM");
         assertEquals("CDM",p1.getPositionName());
         assertFalse(team.editExistingPlayerPosition("zzz","bbb"));
@@ -280,7 +280,7 @@ public class TeamTest {
     public void editExistingPlayerBirthday(){
         Team team=new Team("xxx",new TeamOwner(new Member("alona",null,null,"alona barkat")),new Stadium("terner","lod"));
         Player p1=new Player(new Member("ogu",null,null,"john ogu"),null,null);
-        team.addNewPlayer("john ogu");
+        team.addNewPlayer("ogu");
         team.editExistingPlayerBirthday("ogu",2000,12,12);
         assertEquals("2000-12-12",p1.getStringBirthDate());
         assertFalse(team.editExistingPlayerPosition("zzz","bbb"));
