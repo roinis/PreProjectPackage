@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="285a3633-ea31-48e4-a0bb-000234d0f3ad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/AlphaDatabaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/AlphaDatabaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/AlphaSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/AlphaSystemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/TeamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/TeamTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +27,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -36,6 +34,8 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587927414635" />
@@ -46,17 +46,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.TeamTest.editExistingPlayerBirthday">
-    <configuration name="StadiumTest.stadiumDetailsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PreProjectPackage" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StadiumTest" />
-      <option name="METHOD_NAME" value="stadiumDetailsTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TeamTest">
     <configuration name="TeamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PreProjectPackage" />
       <option name="PACKAGE_NAME" value="" />
@@ -76,11 +66,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TeamTest.observerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TeamTest.editExistingPlayerName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PreProjectPackage" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TeamTest" />
-      <option name="METHOD_NAME" value="observerTest" />
+      <option name="METHOD_NAME" value="editExistingPlayerName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TeamTest.editExistingPlayerPosition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PreProjectPackage" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TeamTest" />
+      <option name="METHOD_NAME" value="editExistingPlayerPosition" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TeamTest.removeExistingPlayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PreProjectPackage" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TeamTest" />
+      <option name="METHOD_NAME" value="removeExistingPlayerTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -88,24 +98,13 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TeamTest.editExistingPlayerBirthday" />
         <item itemvalue="JUnit.TeamTest" />
-        <item itemvalue="JUnit.TeamTest.observerTest" />
-        <item itemvalue="JUnit.StadiumTest.stadiumDetailsTest" />
+        <item itemvalue="JUnit.TeamTest.editExistingPlayerBirthday" />
+        <item itemvalue="JUnit.TeamTest.editExistingPlayerPosition" />
+        <item itemvalue="JUnit.TeamTest.editExistingPlayerName" />
+        <item itemvalue="JUnit.TeamTest.removeExistingPlayerTest" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -118,6 +117,7 @@
       <option name="presentableId" value="Default" />
       <updated>1587925626761</updated>
       <workItem from="1587925628243" duration="1846000" />
+      <workItem from="1587928720978" duration="137000" />
     </task>
     <task id="LOCAL-00001" summary="Reset DB">
       <created>1587927598945</created>
@@ -129,25 +129,8 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="StadiumTest_stadiumDetailsTest - 2020.04.26 at 21h 46m 27s.xml">
-      <configuration name="StadiumTest.stadiumDetailsTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TeamTest_observerTest - 2020.04.26 at 21h 53m 16s.xml">
-      <configuration name="TeamTest.observerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TeamTest_observerTest - 2020.04.26 at 21h 53m 59s.xml">
-      <configuration name="TeamTest.observerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TeamTest - 2020.04.26 at 21h 54m 27s.xml">
-      <configuration name="TeamTest" configurationId="JUnit" />
-    </history-entry>
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1846000" />
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Reset DB" />
@@ -158,6 +141,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="585" y="119" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587927597537" />
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1587928815992">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587928815992" />
+    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1587928815992">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587928815992" />
+    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1587928815991">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587928815991" />
+    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1587928815992">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587928815992" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1587928816684">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587928816684" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1587928816684">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1587928816684" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1587928816684">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1587928816684" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1587928816684">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1587928816684" />
     <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1587927602343">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -166,6 +181,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="771" y="440" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587927566167" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Tests/TeamTest.java</url>
+          <line>218</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="masterDetails">
     <states>
