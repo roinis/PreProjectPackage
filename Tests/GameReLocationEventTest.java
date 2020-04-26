@@ -26,6 +26,7 @@ public class GameReLocationEventTest {
                 originalStadium.getStadiumName() + " to " +
                 relocatedStadium.getStadiumName() + ".";
         assertEquals(eventString,gameReLocationEvent.toString());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -43,6 +44,7 @@ public class GameReLocationEventTest {
                 relocatedStadium.getStadiumName() + ".";
         gameReLocationEvent.setGameNewLocation(new Stadium("kamp noe","barcelona"));
         assertNotEquals(eventString,gameReLocationEvent.toString());
+        AlphaSystem.getSystem().ResetDB();
     }
     @Test
     public void testToString2() {
@@ -59,6 +61,7 @@ public class GameReLocationEventTest {
                 relocatedStadium.getStadiumName() + ".";
             gameReLocationEvent.setAwayTeam(new Team("Barcelona",new TeamOwner(new Member("","","","roi")),null));
         assertNotEquals(eventString,gameReLocationEvent.toString());
+        AlphaSystem.getSystem().ResetDB();
     }
 
 
@@ -70,6 +73,7 @@ public class GameReLocationEventTest {
         Team awayTeam = new Team("MH",new TeamOwner(new Member("","","","roi")),null);
         GameReLocationEvent gameReLocationEvent = new GameReLocationEvent(originalStadium,relocatedStadium,homeTeam,awayTeam);
         assertEquals(originalStadium,gameReLocationEvent.getGameOriginalLocation());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -81,6 +85,7 @@ public class GameReLocationEventTest {
         GameReLocationEvent gameReLocationEvent = new GameReLocationEvent(originalStadium,relocatedStadium,homeTeam,awayTeam);
         gameReLocationEvent.setGameOriginalLocation(relocatedStadium);
         assertEquals(relocatedStadium,gameReLocationEvent.getGameOriginalLocation());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -91,6 +96,7 @@ public class GameReLocationEventTest {
         Team awayTeam = new Team("MH",new TeamOwner(new Member("","","","roi")),null);
         GameReLocationEvent gameReLocationEvent = new GameReLocationEvent(originalStadium,relocatedStadium,homeTeam,awayTeam);
         assertEquals(relocatedStadium,gameReLocationEvent.getGameNewLocation());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -102,6 +108,7 @@ public class GameReLocationEventTest {
         GameReLocationEvent gameReLocationEvent = new GameReLocationEvent(originalStadium,relocatedStadium,homeTeam,awayTeam);
         gameReLocationEvent.setGameNewLocation(originalStadium);
         assertEquals(originalStadium,gameReLocationEvent.getGameNewLocation());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -112,6 +119,7 @@ public class GameReLocationEventTest {
         Team awayTeam = new Team("MH",new TeamOwner(new Member("","","","roi")),null);
         GameReLocationEvent gameReLocationEvent = new GameReLocationEvent(originalStadium,relocatedStadium,homeTeam,awayTeam);
         assertEquals(homeTeam,gameReLocationEvent.getHomeTeam());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -123,6 +131,7 @@ public class GameReLocationEventTest {
         GameReLocationEvent gameReLocationEvent = new GameReLocationEvent(originalStadium,relocatedStadium,homeTeam,awayTeam);
         gameReLocationEvent.setHomeTeam(awayTeam);
         assertEquals(awayTeam,gameReLocationEvent.getHomeTeam());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -133,6 +142,7 @@ public class GameReLocationEventTest {
         Team awayTeam = new Team("MH",new TeamOwner(new Member("","","","roi")),null);
         GameReLocationEvent gameReLocationEvent = new GameReLocationEvent(originalStadium,relocatedStadium,homeTeam,awayTeam);
         assertEquals(awayTeam,gameReLocationEvent.getAwayTeam());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -144,5 +154,6 @@ public class GameReLocationEventTest {
         GameReLocationEvent gameReLocationEvent = new GameReLocationEvent(originalStadium,relocatedStadium,homeTeam,awayTeam);
         gameReLocationEvent.setAwayTeam(homeTeam);
         assertEquals(homeTeam,gameReLocationEvent.getAwayTeam());
+        AlphaSystem.getSystem().ResetDB();
     }
 }

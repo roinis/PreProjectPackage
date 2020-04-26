@@ -21,7 +21,7 @@ public class GameEventTest {
         Player player = new Player(new Member("","","","roi"),null,null);
         GoalEvent goalEvent = new GoalEvent(gameTime,team,player);
         assertEquals(gameTime,goalEvent.getEventGameTime());
-
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -34,6 +34,7 @@ public class GameEventTest {
         GoalEvent goalEvent = new GoalEvent(gameTime,team,player);
         goalEvent.setEventGameTime(gameTime1);
         assertEquals(gameTime1,goalEvent.getEventGameTime());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -43,6 +44,7 @@ public class GameEventTest {
         Player player = new Player(new Member("","","","roi"),null,null);
         GoalEvent goalEvent = new GoalEvent(gameTime,team,player);
         assertEquals(team,goalEvent.getEventTeam());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -54,6 +56,7 @@ public class GameEventTest {
         GoalEvent goalEvent = new GoalEvent(gameTime,team,player);
         goalEvent.setEventTeam(team1);
         assertEquals(team1,goalEvent.getEventTeam());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -63,6 +66,7 @@ public class GameEventTest {
         Player player = new Player(new Member("","","","roi"),null,null);
         GoalEvent goalEvent = new GoalEvent(gameTime,team,player);
         assertEquals(player.getMemberUserName(),goalEvent.getEventPlayer().getMemberUserName());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -73,6 +77,7 @@ public class GameEventTest {
         Player player1 = new Player(new Member("","","","roi1"),null,null);
         GoalEvent goalEvent = new GoalEvent(gameTime,team,player);
         assertEquals(player1.getMemberUserName(),goalEvent.getEventPlayer().getMemberUserName());
+        AlphaSystem.getSystem().ResetDB();
     }
 
 }

@@ -22,6 +22,7 @@ public class GoalEventTest {
         String eventString = "The Player " + player.getMember().getFull_name() + " of team " + team.getTeamName()
                         + " scored a goal" + " at " + gameTime + ".";
         assertEquals(goalEvent.toString(),eventString);
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Deprecated
@@ -36,6 +37,7 @@ public class GoalEventTest {
                 + " scored a goal" + " at " + gameTime + ".";
 
         assertNotEquals(eventString,goalEvent.toString());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Deprecated
@@ -50,5 +52,6 @@ public class GoalEventTest {
                 + " scored a goal" + " at " + gameTime + ".";
 
         assertNotEquals(eventString,goalEvent.toString());
+        AlphaSystem.getSystem().ResetDB();
     }
 }
