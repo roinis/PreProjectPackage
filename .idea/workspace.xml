@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="285a3633-ea31-48e4-a0bb-000234d0f3ad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/TeamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/TeamTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/SearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/PreProjectPackage/AlphaDatabaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/PreProjectPackage/AlphaDatabaseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/PreProjectPackage/AlphaSystemTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/PreProjectPackage/AlphaSystemTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/PreProjectPackage/TeamTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/PreProjectPackage/TeamTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,51 +49,51 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.TeamTest">
-    <configuration name="TeamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SearchTest.testSearchByName5">
+    <configuration name="SearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PreProjectPackage" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TeamTest" />
+      <option name="MAIN_CLASS_NAME" value="SearchTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TeamTest.editExistingPlayerBirthday" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchTest.testSearchByName5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PreProjectPackage" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TeamTest" />
-      <option name="METHOD_NAME" value="editExistingPlayerBirthday" />
+      <option name="MAIN_CLASS_NAME" value="SearchTest" />
+      <option name="METHOD_NAME" value="testSearchByName5" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TeamTest.editExistingPlayerName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchTest.testSearchByName6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PreProjectPackage" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TeamTest" />
-      <option name="METHOD_NAME" value="editExistingPlayerName" />
+      <option name="MAIN_CLASS_NAME" value="SearchTest" />
+      <option name="METHOD_NAME" value="testSearchByName6" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TeamTest.editExistingPlayerPosition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchTest.testSearchByName7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PreProjectPackage" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TeamTest" />
-      <option name="METHOD_NAME" value="editExistingPlayerPosition" />
+      <option name="MAIN_CLASS_NAME" value="SearchTest" />
+      <option name="METHOD_NAME" value="testSearchByName7" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TeamTest.removeExistingPlayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchTest.testSearchByName9" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PreProjectPackage" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TeamTest" />
-      <option name="METHOD_NAME" value="removeExistingPlayerTest" />
+      <option name="MAIN_CLASS_NAME" value="SearchTest" />
+      <option name="METHOD_NAME" value="testSearchByName9" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -98,11 +101,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TeamTest" />
-        <item itemvalue="JUnit.TeamTest.editExistingPlayerBirthday" />
-        <item itemvalue="JUnit.TeamTest.editExistingPlayerPosition" />
-        <item itemvalue="JUnit.TeamTest.editExistingPlayerName" />
-        <item itemvalue="JUnit.TeamTest.removeExistingPlayerTest" />
+        <item itemvalue="JUnit.SearchTest.testSearchByName5" />
+        <item itemvalue="JUnit.SearchTest" />
+        <item itemvalue="JUnit.SearchTest.testSearchByName9" />
+        <item itemvalue="JUnit.SearchTest.testSearchByName7" />
+        <item itemvalue="JUnit.SearchTest.testSearchByName6" />
       </list>
     </recent_temporary>
   </component>
@@ -117,7 +120,7 @@
       <option name="presentableId" value="Default" />
       <updated>1587925626761</updated>
       <workItem from="1587925628243" duration="1846000" />
-      <workItem from="1587928720978" duration="137000" />
+      <workItem from="1587928720978" duration="485000" />
     </task>
     <task id="LOCAL-00001" summary="Reset DB">
       <created>1587927598945</created>
@@ -126,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587927598945</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Team test fix">
+      <created>1587929116090</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587929116091</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,45 +144,47 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Reset DB" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reset DB" />
+    <MESSAGE value="Team test fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Team test fix" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="585" y="119" key="CommitChangelistDialog2" timestamp="1587927597537">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="468" y="0" key="CommitChangelistDialog2" timestamp="1587929114238">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="468" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1587929114238" />
     <state x="585" y="119" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587927597537" />
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1587928815992">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1587929143022">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587928815992" />
-    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1587928815992">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587929143022" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1587929143022">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587928815992" />
-    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1587928815991">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587929143022" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1587929143021">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587928815991" />
-    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1587928815992">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587929143021" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1587929143022">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587928815992" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1587928816684">
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587929143022" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1587928960416">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587928816684" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1587928816684">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587928960416" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1587928960416">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1587928816684" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1587928816684">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1587928960416" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1587928960415">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1587928816684" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1587928816684">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1587928960415" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1587928960416">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1587928816684" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1587928960416" />
     <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1587927602343">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -181,17 +193,6 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="771" y="440" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587927566167" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Tests/TeamTest.java</url>
-          <line>218</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="masterDetails">
     <states>
