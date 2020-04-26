@@ -25,6 +25,7 @@ public class LoginTest {
         catch (UnsupportedEncodingException e){
             e.fillInStackTrace();
         }
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -39,6 +40,7 @@ public class LoginTest {
         catch (UnsupportedEncodingException e){
             e.fillInStackTrace();
         }
+        AlphaSystem.getSystem().ResetDB();
     }
     @Test
     public void loginToSystemTest3(){
@@ -52,5 +54,7 @@ public class LoginTest {
         catch (UnsupportedEncodingException e){
             e.fillInStackTrace();
         }
+        AlphaSystem.getSystem().ResetDB();
     }
+
 }

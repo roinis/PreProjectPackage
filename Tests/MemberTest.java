@@ -32,6 +32,7 @@ public class MemberTest {
         }catch (UnsupportedEncodingException e){
             e.fillInStackTrace();
         }
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -47,6 +48,7 @@ public class MemberTest {
         }catch (UnsupportedEncodingException e){
             e.fillInStackTrace();
         }
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -62,6 +64,7 @@ public class MemberTest {
         }catch (UnsupportedEncodingException e){
             e.fillInStackTrace();
         }
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -77,6 +80,7 @@ public class MemberTest {
         }catch (UnsupportedEncodingException e){
             e.fillInStackTrace();
         }
+        AlphaSystem.getSystem().ResetDB();
     }
 
 
@@ -88,6 +92,7 @@ public class MemberTest {
         m.addJob(p);
         assertTrue(m.getJobsList().size()==1);
         assertTrue(m.getJobsList().containsKey("player"));
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -96,6 +101,7 @@ public class MemberTest {
         Member m = new Member("roei","1234","12345","roei cohen");
         Referee r = new Referee(m);
         assertTrue(m.addReferee(r));
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -106,6 +112,7 @@ public class MemberTest {
         assertTrue(m.addReferee(r));
         Player p = new Player(m, Player.Position.CF,LocalDate.of(1992,7,23));
         assertFalse(m.addJob(p));
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -121,30 +128,35 @@ public class MemberTest {
         catch (UnsupportedEncodingException e){
             e.fillInStackTrace();
         }
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
     public void getUserNameTest(){
         Member m = new Member("roei","1234","12345","roei cohen");
         assertEquals("roei",m.getUser_name());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
     public void getUserPasswordTest(){
         Member m = new Member("roei","1234","12345","roei cohen");
         assertEquals("1234",m.getUser_password());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
     public void getUserIDTest(){
         Member m = new Member("roei","1234","12345","roei cohen");
         assertEquals("12345",m.getUser_id());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
     public void getUserFullNameTest(){
         Member m = new Member("roei","1234","12345","roei cohen");
         assertEquals("roei cohen",m.getFull_name());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -178,6 +190,7 @@ public class MemberTest {
         }catch (UnsupportedEncodingException e){
             e.fillInStackTrace();
         }
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -196,6 +209,7 @@ public class MemberTest {
         }catch (UnsupportedEncodingException e){
             e.fillInStackTrace();
         }
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -213,6 +227,7 @@ public class MemberTest {
         }catch (UnsupportedEncodingException e){
             e.fillInStackTrace();
         }
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -230,6 +245,7 @@ public class MemberTest {
         }catch (UnsupportedEncodingException e){
             e.fillInStackTrace();
         }
+        AlphaSystem.getSystem().ResetDB();
     }
 
 

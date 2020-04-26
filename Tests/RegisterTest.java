@@ -27,6 +27,7 @@ public class RegisterTest {
         catch (UnsupportedEncodingException e){
             e.fillInStackTrace();
         }
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -41,5 +42,6 @@ public class RegisterTest {
         catch (UnsupportedEncodingException e){
             e.fillInStackTrace();
         }
+        AlphaSystem.getSystem().ResetDB();
     }
 }

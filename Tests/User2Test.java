@@ -41,6 +41,7 @@ public class User2Test {
          System.out.println(coach1.getMember().getFull_name());
          System.out.println(coach1.getTeam().getTeamName());
          **/
+        AlphaSystem.getSystem().ResetDB();
 
 
     }
@@ -59,6 +60,7 @@ public class User2Test {
         info = user.showTeamManagerPrivateInfo("john");
         assertEquals(teamManager2.getMember().getFull_name(),info.get(0));
         assertEquals(teamManager2.getTeam().getTeamName(),info.get(1));
+        AlphaSystem.getSystem().ResetDB();
 
     }
 
@@ -77,6 +79,7 @@ public class User2Test {
         assertEquals(String.valueOf(league2.getScoringPolicy().getPointsPerWin()),info.get(0));
         assertEquals(String.valueOf(league2.getScoringPolicy().getPointsPerDraw()),info.get(1));
         assertEquals(String.valueOf(league2.getScoringPolicy().getPointPerLoss()),info.get(2));
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -102,6 +105,7 @@ public class User2Test {
         assertEquals("4",info.get(0));
         assertEquals("2",info.get(1));
         assertEquals("1",info.get(2));
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -119,6 +123,7 @@ public class User2Test {
         assertEquals(new Integer(3),ret.getFirst().getValue());
         assertNull(user.showLeagueTable("t1", 1991));
         assertNull(user.showLeagueTable("t2", 1991));
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -133,6 +138,7 @@ public class User2Test {
         assertEquals(league1.getLeagueReferees().get(0).getMemberFullName(),info.get(0));
         assertEquals(league1.getLeagueReferees().get(1).getMemberFullName(),info.get(1));
         assertEquals(league1.getLeagueReferees().get(2).getMemberFullName(),info.get(2));
+        AlphaSystem.getSystem().ResetDB();
 
 
     }
@@ -150,6 +156,7 @@ public class User2Test {
         assertEquals(league1.getLeagueVarReferees().get(0).getMemberFullName(),info.get(0));
         assertEquals(league1.getLeagueVarReferees().get(1).getMemberFullName(),info.get(1));
         assertEquals(league1.getLeagueVarReferees().get(2).getMemberFullName(),info.get(2));
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -164,6 +171,7 @@ public class User2Test {
         assertEquals(league1.getLeagueLinesmans().get(0).getMemberFullName(),info.get(0));
         assertEquals(league1.getLeagueLinesmans().get(1).getMemberFullName(),info.get(1));
         assertEquals(league1.getLeagueLinesmans().get(2).getMemberFullName(),info.get(2));
+        AlphaSystem.getSystem().ResetDB();
 
     }
 
@@ -180,6 +188,7 @@ public class User2Test {
         assertEquals("john ogu",players.get(0));
         assertEquals("ben sahar",players.get(1));
         assertEquals(2,players.size());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -195,6 +204,7 @@ public class User2Test {
         assertEquals("barak bachar",coaches.get(0));
         assertEquals("dror shimshon",coaches.get(1));
         assertEquals(2,coaches.size());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -214,6 +224,7 @@ public class User2Test {
         assertEquals("alona barkat",ret.get(0));
         assertEquals("eli barkat",ret.get(1));
         assertNull(user.showTeamOwners("macabi"));
+        AlphaSystem.getSystem().ResetDB();
 
     }
 
@@ -225,6 +236,7 @@ public class User2Test {
         Team team=new Team("hbs",owner1,stadium);
         assertEquals("terner",user.showTeamStadium("hbs"));
         assertNull(user.showTeamStadium("x"));
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -235,6 +247,7 @@ public class User2Test {
         player.addToTeam(team);
         assertNull(user.showPlayerTeam("tony"));
         assertEquals("Hbs",user.showPlayerTeam("john ogu"));
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -245,6 +258,7 @@ public class User2Test {
         player.addToTeam(team);
         assertNull(user.showPlayerPosition("tony"));
         assertEquals("CDM",user.showPlayerPosition("john ogu"));
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -255,6 +269,7 @@ public class User2Test {
         player.addToTeam(team);
         assertNull(user.showPlayerBirthDate("tony"));
         assertEquals("1990-11-11",user.showPlayerBirthDate("john ogu"));
+        AlphaSystem.getSystem().ResetDB();
     }
 
     public class MemberStub extends Member{
@@ -262,6 +277,7 @@ public class User2Test {
             super(user_name,user_password, user_id, full_name);
             AlphaSystem alphaSystem=AlphaSystem.getSystem();
             alphaSystem.AddtoDB(2,this);
+            AlphaSystem.getSystem().ResetDB();
         }
     }
 }
