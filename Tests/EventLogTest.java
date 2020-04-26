@@ -17,6 +17,7 @@ public class EventLogTest {
     @Deprecated
     @Test
     public void addEvent() {
+        AlphaSystem.getSystem().ResetDB();
         Time gameTime  = new Time(1,20,10);
         Team homeTeam = new Team ("Hapoel BS",new TeamOwner(new Member("","","","roi")),null);
         Team awayTeam = new Team ("Maccabi TA",new TeamOwner(new Member("","","","roi")),null);

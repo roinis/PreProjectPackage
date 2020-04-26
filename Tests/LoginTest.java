@@ -11,7 +11,7 @@ import System.*;
 import Jobs.*;
 import Events.*;
 import Association.*;
-public class LoginTest {
+    public class LoginTest {
 
     @Test
     public void loginToSystemTest1(){
