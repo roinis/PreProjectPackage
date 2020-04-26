@@ -1,12 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="285a3633-ea31-48e4-a0bb-000234d0f3ad" name="Default Changelist" comment="">
+    <list default="true" id="285a3633-ea31-48e4-a0bb-000234d0f3ad" name="Default Changelist" comment="Team &amp; search test fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/SearchTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/PreProjectPackage/AlphaDatabaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/PreProjectPackage/AlphaDatabaseTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/PreProjectPackage/AlphaSystemTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/PreProjectPackage/AlphaSystemTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/PreProjectPackage/TeamTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/PreProjectPackage/TeamTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/User2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/User2Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/PreProjectPackage/AddCoachToTeamEventTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/PreProjectPackage/AddCoachToTeamEventTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/PreProjectPackage/AddPlayerToTeamEventTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/PreProjectPackage/AddPlayerToTeamEventTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/PreProjectPackage/BudgetExceptionEventTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/PreProjectPackage/BudgetExceptionEventTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/PreProjectPackage/EndGameEventTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/PreProjectPackage/EndGameEventTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/PreProjectPackage/EventLogTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/PreProjectPackage/EventLogTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/PreProjectPackage/FoulEventTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/PreProjectPackage/FoulEventTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/PreProjectPackage/GameDelayedEventTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/PreProjectPackage/GameDelayedEventTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/PreProjectPackage/GameEventTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/PreProjectPackage/GameEventTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/PreProjectPackage/GameReLocationEventTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/PreProjectPackage/GameReLocationEventTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/PreProjectPackage/GoalEventTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/PreProjectPackage/GoalEventTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/PreProjectPackage/InjuryEventTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/PreProjectPackage/InjuryEventTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/PreProjectPackage/NewNominationEventTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/PreProjectPackage/NewNominationEventTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/PreProjectPackage/OffsideEventTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/PreProjectPackage/OffsideEventTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/PreProjectPackage/RedCardEventTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/PreProjectPackage/RedCardEventTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/PreProjectPackage/RemoveCoachFromTeamEventTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/PreProjectPackage/RemoveCoachFromTeamEventTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/PreProjectPackage/RemoveNominationEventTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/PreProjectPackage/RemoveNominationEventTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/PreProjectPackage/RemovePlayerFromTeamEventTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/PreProjectPackage/RemovePlayerFromTeamEventTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/PreProjectPackage/SearchTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/PreProjectPackage/SearchTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/PreProjectPackage/StartGameEventTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/PreProjectPackage/StartGameEventTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/PreProjectPackage/SubstitutionEventTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/PreProjectPackage/SubstitutionEventTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/PreProjectPackage/TeamCloseEventTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/PreProjectPackage/TeamCloseEventTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/PreProjectPackage/TeamReOpenEventTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/PreProjectPackage/TeamReOpenEventTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/PreProjectPackage/TewwtEventTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/PreProjectPackage/TewwtEventTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/PreProjectPackage/User2Test$MemberStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/PreProjectPackage/User2Test$MemberStub.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/PreProjectPackage/User2Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/PreProjectPackage/User2Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/PreProjectPackage/YellowCardEventTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/PreProjectPackage/YellowCardEventTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/users.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,51 +73,51 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.SearchTest.testSearchByName5">
-    <configuration name="SearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.User2Test">
+    <configuration name="User2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PreProjectPackage" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SearchTest" />
+      <option name="MAIN_CLASS_NAME" value="User2Test" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchTest.testSearchByName5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="User2Test.showPlayerBirthDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PreProjectPackage" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SearchTest" />
-      <option name="METHOD_NAME" value="testSearchByName5" />
+      <option name="MAIN_CLASS_NAME" value="User2Test" />
+      <option name="METHOD_NAME" value="showPlayerBirthDate" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchTest.testSearchByName6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="User2Test.showPlayerPosition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PreProjectPackage" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SearchTest" />
-      <option name="METHOD_NAME" value="testSearchByName6" />
+      <option name="MAIN_CLASS_NAME" value="User2Test" />
+      <option name="METHOD_NAME" value="showPlayerPosition" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchTest.testSearchByName7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="User2Test.showPlayerTeam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PreProjectPackage" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SearchTest" />
-      <option name="METHOD_NAME" value="testSearchByName7" />
+      <option name="MAIN_CLASS_NAME" value="User2Test" />
+      <option name="METHOD_NAME" value="showPlayerTeam" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchTest.testSearchByName9" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="User2Test.showTeamOwners" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PreProjectPackage" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SearchTest" />
-      <option name="METHOD_NAME" value="testSearchByName9" />
+      <option name="MAIN_CLASS_NAME" value="User2Test" />
+      <option name="METHOD_NAME" value="showTeamOwners" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -101,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SearchTest.testSearchByName5" />
-        <item itemvalue="JUnit.SearchTest" />
-        <item itemvalue="JUnit.SearchTest.testSearchByName9" />
-        <item itemvalue="JUnit.SearchTest.testSearchByName7" />
-        <item itemvalue="JUnit.SearchTest.testSearchByName6" />
+        <item itemvalue="JUnit.User2Test" />
+        <item itemvalue="JUnit.User2Test.showPlayerTeam" />
+        <item itemvalue="JUnit.User2Test.showPlayerBirthDate" />
+        <item itemvalue="JUnit.User2Test.showPlayerPosition" />
+        <item itemvalue="JUnit.User2Test.showTeamOwners" />
       </list>
     </recent_temporary>
   </component>
@@ -120,7 +144,7 @@
       <option name="presentableId" value="Default" />
       <updated>1587925626761</updated>
       <workItem from="1587925628243" duration="1846000" />
-      <workItem from="1587928720978" duration="485000" />
+      <workItem from="1587928720978" duration="1528000" />
     </task>
     <task id="LOCAL-00001" summary="Reset DB">
       <created>1587927598945</created>
@@ -136,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587929116091</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Team &amp; search test fix">
+      <created>1587929520325</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587929520325</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,49 +176,55 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Reset DB" />
     <MESSAGE value="Team test fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Team test fix" />
+    <MESSAGE value="Team &amp; search test fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Team &amp; search test fix" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="468" y="0" key="CommitChangelistDialog2" timestamp="1587929114238">
+    <state x="468" y="0" key="CommitChangelistDialog2" timestamp="1587929570912">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="468" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1587929114238" />
+    <state x="468" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1587929570912" />
     <state x="585" y="119" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587927597537" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1587929143022">
+    <state width="1493" height="269" key="GridCell.Tab.0.bottom" timestamp="1587930239727">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587929143022" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1587929143022">
+    <state width="1493" height="269" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587930239727" />
+    <state width="1493" height="269" key="GridCell.Tab.0.center" timestamp="1587930239727">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587929143022" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1587929143021">
+    <state width="1493" height="269" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587930239727" />
+    <state width="1493" height="269" key="GridCell.Tab.0.left" timestamp="1587930239726">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587929143021" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1587929143022">
+    <state width="1493" height="269" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587930239726" />
+    <state width="1493" height="269" key="GridCell.Tab.0.right" timestamp="1587930239727">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587929143022" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1587928960416">
+    <state width="1493" height="269" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587930239727" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1587930180263">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587928960416" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1587928960416">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587930180263" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1587930180262">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1587928960416" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1587928960415">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1587930180262" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1587930180262">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1587928960415" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1587928960416">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1587930180262" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1587930180263">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1587928960416" />
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1587927602343">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1587930180263" />
+    <state x="657" y="280" width="388" height="264" key="MultipleFileMergeDialog" timestamp="1587929547061">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="657" y="280" width="388" height="264" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1587929547061" />
+    <state x="442" y="204" key="Vcs.Push.Dialog.v2" timestamp="1587929577377">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="442" y="204" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1587929577377" />
     <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587927602343" />
     <state x="771" y="440" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587927566167">
       <screen x="0" y="0" width="1920" height="1040" />
