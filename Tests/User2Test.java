@@ -181,8 +181,8 @@ public class User2Test {
         Player player1=new Player(new Member("ogu",null,null,"john ogu"), Player.Position.CDM, LocalDate.of(1990,11,11));
         Player player2=new Player(new Member("sahar",null,null,"ben sahar"), Player.Position.CDM, LocalDate.of(1990,11,11));
         Team team=new Team("Hbs",new TeamOwner(new Member("x",null,null,null)),null);
-        team.addNewPlayer("john ogu");
-        team.addNewPlayer("ben sahar");
+        team.addNewPlayer("ogu");
+        team.addNewPlayer("sahar");
         assertNull(user.showTeamPlayers("macabi"));
         List<String> players = user.showTeamPlayers("Hbs");
         assertEquals("john ogu",players.get(0));
@@ -216,7 +216,8 @@ public class User2Test {
     public void showTeamOwners() {
         User user=new VisitorStub();
         TeamOwner owner1=new TeamOwner(new Member("alona",null,null,"alona barkat"));
-        MemberStub owner2=new MemberStub("eli",null,null,"eli barkat");
+        Member owner2=new Member("eli",null,null,"eli barkat");
+        AlphaSystem.getSystem().AddtoDB(2,owner2);
         Team team=new Team("hbs",owner1,null);
         owner1.addOwner("eli");
         List<String> ret = user.showTeamOwners("hbs");
@@ -246,7 +247,7 @@ public class User2Test {
         Team team=new Team("Hbs",new TeamOwner(new Member("x",null,null,null)),null);
         player.addToTeam(team);
         assertNull(user.showPlayerTeam("tony"));
-        assertEquals("Hbs",user.showPlayerTeam("john ogu"));
+        assertEquals("Hbs",user.showPlayerTeam("ogu"));
         AlphaSystem.getSystem().ResetDB();
     }
 
@@ -257,7 +258,7 @@ public class User2Test {
         Team team=new Team("Hbs",new TeamOwner(new Member("x",null,null,null)),null);
         player.addToTeam(team);
         assertNull(user.showPlayerPosition("tony"));
-        assertEquals("CDM",user.showPlayerPosition("john ogu"));
+        assertEquals("CDM",user.showPlayerPosition("ogu"));
         AlphaSystem.getSystem().ResetDB();
     }
 
@@ -268,7 +269,7 @@ public class User2Test {
         Team team=new Team("Hbs",new TeamOwner(new Member("x",null,null,null)),null);
         player.addToTeam(team);
         assertNull(user.showPlayerBirthDate("tony"));
-        assertEquals("1990-11-11",user.showPlayerBirthDate("john ogu"));
+        assertEquals("1990-11-11",user.showPlayerBirthDate("ogu"));
         AlphaSystem.getSystem().ResetDB();
     }
 
