@@ -21,6 +21,7 @@ public class TeamReOpenEventTest {
                 " has reopened" +
                 " at " + closeTeamDate;
         assertEquals(eventString,teamReOpenEvent.toString());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -34,6 +35,7 @@ public class TeamReOpenEventTest {
                 " at " + closeTeamDate;;
         teamReOpenEvent.setReopenedTeam(new Team("MTA",new TeamOwner(new Member("","","","roi")),null));
         assertNotEquals(eventString,teamReOpenEvent.toString());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -47,6 +49,7 @@ public class TeamReOpenEventTest {
                 " at " + closeTeamDate;
         teamReOpenEvent.setReopenedTime(LocalDateTime.of(2020,2,10,18,3,0));
         assertNotEquals(eventString,teamReOpenEvent.toString());
+        AlphaSystem.getSystem().ResetDB();
     }
 
 
@@ -56,6 +59,7 @@ public class TeamReOpenEventTest {
         LocalDateTime closeTeamDate  = LocalDateTime.of(2020,3,1,15,13,0);
         TeamReOpenEvent teamReOpenEvent = new TeamReOpenEvent(closeTeamDate,team);
         assertEquals(closeTeamDate,teamReOpenEvent.getReopenedTime());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -67,6 +71,7 @@ public class TeamReOpenEventTest {
         TeamReOpenEvent teamReOpenEvent = new TeamReOpenEvent(closeTeamDate,team);
         teamReOpenEvent.setReopenedTime(closeTeamDate1);
         assertEquals(closeTeamDate1,teamReOpenEvent.getReopenedTime());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -75,6 +80,7 @@ public class TeamReOpenEventTest {
         LocalDateTime closeTeamDate  = LocalDateTime.of(2020,3,1,15,13,0);
         TeamReOpenEvent teamReOpenEvent = new TeamReOpenEvent(closeTeamDate,team);
         assertEquals(team,teamReOpenEvent.getReopenedTeam());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -86,6 +92,7 @@ public class TeamReOpenEventTest {
         TeamReOpenEvent teamReOpenEvent = new TeamReOpenEvent(closeTeamDate,team);
         teamReOpenEvent.setReopenedTeam(team1);
         assertEquals(team1,teamReOpenEvent.getReopenedTeam());
+        AlphaSystem.getSystem().ResetDB();
 
     }
 }

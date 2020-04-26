@@ -22,6 +22,7 @@ public class RemovePlayerFromTeamEventTest {
                 " has leaved the Team: " + team.getTeamName() +
                 " At: " + removePlayerFromTeamEvent.getDateTime();
         assertEquals(eventString, removePlayerFromTeamEvent.toString());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -35,6 +36,7 @@ public class RemovePlayerFromTeamEventTest {
                 " At: " + removePlayerFromTeamEvent.getDateTime();
         removePlayerFromTeamEvent.setPlayer(new Player(new Member(null, null, null, "yossi"), null, null));
         assertNotEquals(eventString, removePlayerFromTeamEvent.toString());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -48,6 +50,7 @@ public class RemovePlayerFromTeamEventTest {
                 " At: " + removePlayerFromTeamEvent.getDateTime();
         removePlayerFromTeamEvent.setTeam(new Team("TelAviv", new TeamOwner(new Member("", "", "", "roi")), null));
         assertNotEquals(eventString, removePlayerFromTeamEvent.toString());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -56,6 +59,7 @@ public class RemovePlayerFromTeamEventTest {
         Team team = new Team("HBS", new TeamOwner(new Member("", "", "", "roi")), null);
         RemovePlayerFromTeamEvent removePlayerFromTeamEvent = new RemovePlayerFromTeamEvent(player, team);
         assertEquals(player, removePlayerFromTeamEvent.getPlayer());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -66,6 +70,7 @@ public class RemovePlayerFromTeamEventTest {
         RemovePlayerFromTeamEvent removePlayerFromTeamEvent = new RemovePlayerFromTeamEvent(player, team);
         removePlayerFromTeamEvent.setPlayer(player1);
         assertEquals(player1, removePlayerFromTeamEvent.getPlayer());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -74,6 +79,7 @@ public class RemovePlayerFromTeamEventTest {
         Team team = new Team("HBS", new TeamOwner(new Member("", "", "", "roi")), null);
         RemovePlayerFromTeamEvent removePlayerFromTeamEvent = new RemovePlayerFromTeamEvent(player, team);
         assertEquals(team, removePlayerFromTeamEvent.getTeam());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -84,6 +90,7 @@ public class RemovePlayerFromTeamEventTest {
         RemovePlayerFromTeamEvent removePlayerFromTeamEvent = new RemovePlayerFromTeamEvent(player, team);
         removePlayerFromTeamEvent.setTeam(team1);
         assertEquals(team1, removePlayerFromTeamEvent.getTeam());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -92,6 +99,7 @@ public class RemovePlayerFromTeamEventTest {
         Team team = new Team("HBS", new TeamOwner(new Member("", "", "", "roi")), null);
         RemovePlayerFromTeamEvent removePlayerFromTeamEvent = new RemovePlayerFromTeamEvent(player, team);
         removePlayerFromTeamEvent.getDateTime();
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -102,5 +110,6 @@ public class RemovePlayerFromTeamEventTest {
         RemovePlayerFromTeamEvent removePlayerFromTeamEvent = new RemovePlayerFromTeamEvent(player, team);
         removePlayerFromTeamEvent.setDateTime(localDateTime);
         assertEquals(localDateTime, removePlayerFromTeamEvent.getDateTime());
+        AlphaSystem.getSystem().ResetDB();
     }
 }

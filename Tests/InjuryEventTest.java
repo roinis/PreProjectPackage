@@ -22,6 +22,7 @@ public class InjuryEventTest {
         String eventString = "The Player " + player.getMember().getFull_name() + " of team " + team.getTeamName()
                 + " Was injured at " + gameTime + ".";
         assertEquals(injuryEvent.toString(),eventString);
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Deprecated
@@ -36,6 +37,7 @@ public class InjuryEventTest {
                 + " Was injured at " + gameTime + ".";
 
         assertNotEquals(eventString,injuryEvent.toString());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Deprecated
@@ -50,5 +52,6 @@ public class InjuryEventTest {
                 + " Was injured at " + gameTime + ".";
 
         assertNotEquals(eventString,injuryEvent.toString());
+        AlphaSystem.getSystem().ResetDB();
     }
 }

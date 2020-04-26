@@ -28,6 +28,7 @@ public class GameDelayedEventTest {
                 originalDate + " to " +
                 delayedDate + ".";
         assertEquals(eventString,gameDelayedEvent.toString());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -45,6 +46,7 @@ public class GameDelayedEventTest {
                 delayedDate + ".";
         gameDelayedEvent.setGameDelayedTime(LocalDateTime.of(2019,10,6,22,3,0));
         assertNotEquals(eventString,gameDelayedEvent.toString());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -62,6 +64,7 @@ public class GameDelayedEventTest {
                 delayedDate + ".";
         gameDelayedEvent.setAwayTeam(new Team("MTA",new TeamOwner(new Member("","","","roi")),null));
         assertNotEquals(eventString,gameDelayedEvent.toString());
+        AlphaSystem.getSystem().ResetDB();
     }
 
 
@@ -73,6 +76,7 @@ public class GameDelayedEventTest {
         Team awayTeam = new Team("MH",new TeamOwner(new Member("","","","roi")),null);
         GameDelayedEvent gameDelayedEvent =  new GameDelayedEvent(originalDate,delayedDate,homeTeam,awayTeam);
         assertEquals(originalDate,gameDelayedEvent.getGameOriginalTime());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -84,6 +88,7 @@ public class GameDelayedEventTest {
         GameDelayedEvent gameDelayedEvent =  new GameDelayedEvent(originalDate,delayedDate,homeTeam,awayTeam);
         gameDelayedEvent.setGameOriginalTime(delayedDate);
         assertEquals(delayedDate,gameDelayedEvent.getGameOriginalTime());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -94,6 +99,7 @@ public class GameDelayedEventTest {
         Team awayTeam = new Team("MH",new TeamOwner(new Member("","","","roi")),null);
         GameDelayedEvent gameDelayedEvent =  new GameDelayedEvent(originalDate,delayedDate,homeTeam,awayTeam);
         assertEquals(delayedDate,gameDelayedEvent.getGameDelayedTime());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -105,6 +111,7 @@ public class GameDelayedEventTest {
         GameDelayedEvent gameDelayedEvent =  new GameDelayedEvent(originalDate,delayedDate,homeTeam,awayTeam);
         gameDelayedEvent.setGameDelayedTime(originalDate);
         assertEquals(originalDate,gameDelayedEvent.getGameDelayedTime());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -115,6 +122,7 @@ public class GameDelayedEventTest {
         Team awayTeam = new Team("MH",new TeamOwner(new Member("","","","roi")),null);
         GameDelayedEvent gameDelayedEvent =  new GameDelayedEvent(originalDate,delayedDate,homeTeam,awayTeam);
         assertEquals(homeTeam,gameDelayedEvent.getHomeTeam());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -124,8 +132,9 @@ public class GameDelayedEventTest {
         Team homeTeam = new Team("HBS",new TeamOwner(new Member("","","","roi")),null);
         Team awayTeam = new Team("MH",new TeamOwner(new Member("","","","roi")),null);
         GameDelayedEvent gameDelayedEvent =  new GameDelayedEvent(originalDate,delayedDate,homeTeam,awayTeam);
-        gameDelayedEvent.setAwayTeam(awayTeam);
-        assertEquals(awayTeam,gameDelayedEvent.getAwayTeam());
+        gameDelayedEvent.setHomeTeam(awayTeam);
+        assertEquals(awayTeam,gameDelayedEvent.getHomeTeam());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -136,6 +145,7 @@ public class GameDelayedEventTest {
         Team awayTeam = new Team("MH",new TeamOwner(new Member("","","","roi")),null);
         GameDelayedEvent gameDelayedEvent =  new GameDelayedEvent(originalDate,delayedDate,homeTeam,awayTeam);
         assertEquals(awayTeam,gameDelayedEvent.getAwayTeam());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -147,5 +157,6 @@ public class GameDelayedEventTest {
         GameDelayedEvent gameDelayedEvent =  new GameDelayedEvent(originalDate,delayedDate,homeTeam,awayTeam);
         gameDelayedEvent.setAwayTeam(homeTeam);
         assertEquals(homeTeam,gameDelayedEvent.getAwayTeam());
+        AlphaSystem.getSystem().ResetDB();
     }
 }

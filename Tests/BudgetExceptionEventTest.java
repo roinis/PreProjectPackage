@@ -27,6 +27,7 @@ public class BudgetExceptionEventTest {
                 budgetExceptionEvent.getException() + "\n Accepted budget: " +
                 budgetExceptionEvent.getBudget() + "\n Current budget: " + (budgetExceptionEvent.getBudget() + budgetExceptionEvent.getException());
         assertEquals(eventString,budgetExceptionEvent.toString());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -38,6 +39,7 @@ public class BudgetExceptionEventTest {
                 budgetExceptionEvent.getBudget() + "\n Current budget: " + (budgetExceptionEvent.getBudget() + budgetExceptionEvent.getException());
         budgetExceptionEvent.setBudget(500);
         assertNotEquals(eventString,budgetExceptionEvent.toString());
+        AlphaSystem.getSystem().ResetDB();
     }
 
 
@@ -46,6 +48,7 @@ public class BudgetExceptionEventTest {
         TeamOwner teamOwner = new TeamOwner(new Member("","","","check"));
         BudgetExceptionEvent budgetExceptionEvent = new BudgetExceptionEvent(8000,40,new Team("HBS",teamOwner,null));
         assertEquals(8000,budgetExceptionEvent.getBudget());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -54,6 +57,7 @@ public class BudgetExceptionEventTest {
         BudgetExceptionEvent budgetExceptionEvent = new BudgetExceptionEvent(8000,40,new Team("HBS",teamOwner,null));
         budgetExceptionEvent.setBudget(10);
         assertEquals(10,budgetExceptionEvent.getBudget());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -61,6 +65,7 @@ public class BudgetExceptionEventTest {
         TeamOwner teamOwner = new TeamOwner(new Member("","","","check"));
         BudgetExceptionEvent budgetExceptionEvent = new BudgetExceptionEvent(8000,40,new Team("HBS",teamOwner,null));
         assertEquals(40,budgetExceptionEvent.getException());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -69,6 +74,7 @@ public class BudgetExceptionEventTest {
         BudgetExceptionEvent budgetExceptionEvent = new BudgetExceptionEvent(8000,40,new Team("HBS",teamOwner,null));
         budgetExceptionEvent.setException(20);
         assertEquals(20,budgetExceptionEvent.getException());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -77,6 +83,7 @@ public class BudgetExceptionEventTest {
         Team team = (new Team("HBS",teamOwner,null));
         BudgetExceptionEvent budgetExceptionEvent = new BudgetExceptionEvent(8000,40,team);
         assertEquals(team,budgetExceptionEvent.getTeam());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -87,5 +94,6 @@ public class BudgetExceptionEventTest {
         BudgetExceptionEvent budgetExceptionEvent = new BudgetExceptionEvent(8000,40,team);
         budgetExceptionEvent.setTeam(team1);
         assertEquals(team1,budgetExceptionEvent.getTeam());
+        AlphaSystem.getSystem().ResetDB();
     }
 }

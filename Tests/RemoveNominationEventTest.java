@@ -19,6 +19,7 @@ public class RemoveNominationEventTest {
                 +" has fired from " + "coach"
                 + " position.";
         assertEquals(eventString,removeNominationEvent.toString());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -31,6 +32,7 @@ public class RemoveNominationEventTest {
                 + " position.";
         removeNominationEvent.setNomination("player");
         assertNotEquals(eventString,removeNominationEvent.toString());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -43,6 +45,7 @@ public class RemoveNominationEventTest {
                 + " position.";
         removeNominationEvent.setTeam(new Team("MTA",new TeamOwner(new Member("","","","roi")),null));
         assertNotEquals(eventString,removeNominationEvent.toString());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -51,6 +54,7 @@ public class RemoveNominationEventTest {
         Member member = new Member(null,null,null,"toni wak");
         RemoveNominationEvent removeNominationEvent = new RemoveNominationEvent(team,member,"coach");
         assertEquals(member,removeNominationEvent.getMember());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -59,6 +63,7 @@ public class RemoveNominationEventTest {
         Member member = new Member(null,null,null,"toni wak");
         RemoveNominationEvent removeNominationEvent = new RemoveNominationEvent(team,member,"coach");
         assertEquals(team,removeNominationEvent.getTeam());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -69,6 +74,7 @@ public class RemoveNominationEventTest {
         RemoveNominationEvent removeNominationEvent = new RemoveNominationEvent(team,member,"coach");
         removeNominationEvent.setTeam(team1);
         assertEquals(team1,removeNominationEvent.getTeam());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -80,6 +86,7 @@ public class RemoveNominationEventTest {
         RemoveNominationEvent removeNominationEvent = new RemoveNominationEvent(team,member,"coach");
         removeNominationEvent.setMember(member1);
         assertEquals(member1,removeNominationEvent.getMember());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -88,6 +95,7 @@ public class RemoveNominationEventTest {
         Member member = new Member(null,null,null,"toni wak");
         RemoveNominationEvent removeNominationEvent = new RemoveNominationEvent(team,member,"coach");
         assertEquals("coach",removeNominationEvent.getNomination());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -97,6 +105,7 @@ public class RemoveNominationEventTest {
         RemoveNominationEvent removeNominationEvent = new RemoveNominationEvent(team,member,"coach");
         removeNominationEvent.setNomination("check");
         assertEquals("check",removeNominationEvent.getNomination());
+        AlphaSystem.getSystem().ResetDB();
     }
 
 

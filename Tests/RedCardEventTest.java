@@ -22,6 +22,7 @@ public class RedCardEventTest {
         String eventString = "The Player " + player.getMember().getFull_name() + " of team " + team.getTeamName()
                             + " Received Red Card at " + gameTime + ".";
         assertEquals(redCardEvent.toString(),eventString);
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Deprecated
@@ -35,6 +36,7 @@ public class RedCardEventTest {
         String eventString = "The Player " + player.getMember().getFull_name() + " of team " + team.getTeamName()
                 + " Received Red Card at " + gameTime + ".";
         assertNotEquals(redCardEvent.toString(),eventString);
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Deprecated
@@ -48,6 +50,7 @@ public class RedCardEventTest {
         String eventString = "The Player " + player.getMember().getFull_name() + " of team " + team.getTeamName()
                                 + " Received Red Card at " + gameTime + ".";
         assertNotEquals(redCardEvent.toString(),eventString);
+        AlphaSystem.getSystem().ResetDB();
     }
 
 }

@@ -21,6 +21,7 @@ public class StartGameEventTest {
         StartGameEvent startGameEvent = new StartGameEvent(gameTime,homeTeam,awayTeam);
         String eventString = "The match between " + homeTeam.getTeamName() + " and " + awayTeam.getTeamName() + " has started.";
         assertEquals(startGameEvent.toString(),eventString);
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Deprecated
@@ -32,11 +33,10 @@ public class StartGameEventTest {
         StartGameEvent startGameEvent = new StartGameEvent(gameTime,homeTeam,awayTeam);
         String eventString = "The match between " + homeTeam.getTeamName() + " and " + awayTeam.getTeamName() + " has started.";
         assertEquals(startGameEvent.toString(),eventString);
+        AlphaSystem.getSystem().ResetDB();
     }
 
-    @Test
-    public void addEventToLog() {
-    }
+
 
 
     @Test
@@ -46,6 +46,7 @@ public class StartGameEventTest {
         Team awayTeam = new Team ("Maccabi TA",new TeamOwner(new Member("","","","roi")),null);
         StartGameEvent startGameEvent = new StartGameEvent(gameTime,homeTeam,awayTeam);
         assertEquals(gameTime,startGameEvent.getEventGameTime());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -56,7 +57,7 @@ public class StartGameEventTest {
         StartGameEvent startGameEvent = new StartGameEvent(gameTime,homeTeam,awayTeam);
         startGameEvent.setEventGameTime(new Time(1,10,10));
         assertEquals(new Time(1,10,10),startGameEvent.getEventGameTime());
-
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -66,6 +67,7 @@ public class StartGameEventTest {
         Team awayTeam = new Team ("Maccabi TA",new TeamOwner(new Member("","","","roi")),null);
         StartGameEvent startGameEvent = new StartGameEvent(gameTime,homeTeam,awayTeam);
         assertEquals(homeTeam,startGameEvent.getHomeTeam());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -76,6 +78,7 @@ public class StartGameEventTest {
         StartGameEvent startGameEvent = new StartGameEvent(gameTime,homeTeam,awayTeam);
         startGameEvent.setHomeTeam(awayTeam);
         assertEquals(awayTeam,startGameEvent.getHomeTeam());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -85,6 +88,7 @@ public class StartGameEventTest {
         Team awayTeam = new Team ("Maccabi TA",new TeamOwner(new Member("","","","roi")),null);
         StartGameEvent startGameEvent = new StartGameEvent(gameTime,homeTeam,awayTeam);
         assertEquals(awayTeam,startGameEvent.getAwayTeam());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -95,7 +99,10 @@ public class StartGameEventTest {
         StartGameEvent startGameEvent = new StartGameEvent(gameTime,homeTeam,awayTeam);
         startGameEvent.setAwayTeam(homeTeam);
         assertEquals(homeTeam,startGameEvent.getAwayTeam());
+        AlphaSystem.getSystem().ResetDB();
     }
+
+
 
 
 }

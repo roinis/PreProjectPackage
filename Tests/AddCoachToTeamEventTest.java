@@ -23,6 +23,7 @@ public class AddCoachToTeamEventTest {
                 " At: " + addCoachToTeamEvent.getDateTime();
 
         assertEquals(eventString,addCoachToTeamEvent.toString());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -36,6 +37,7 @@ public class AddCoachToTeamEventTest {
                 " At: " + addCoachToTeamEvent.getDateTime();
         addCoachToTeamEvent.setCoach(new Coach(new Member(null,null,null,"yossi"), Coach.Certification.MainCoach));
         assertNotEquals(eventString,addCoachToTeamEvent.toString());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -50,6 +52,7 @@ public class AddCoachToTeamEventTest {
 
         addCoachToTeamEvent.setTeam(new Team("TelAviv",new TeamOwner(new Member("","","","roi")),null));
         assertNotEquals(eventString,addCoachToTeamEvent.toString());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -58,6 +61,7 @@ public class AddCoachToTeamEventTest {
         Team team = new Team("HBS",new TeamOwner(new Member("","","","roi")),null);
         AddCoachToTeamEvent addCoachToTeamEvent = new AddCoachToTeamEvent(coach,team);
         assertEquals(addCoachToTeamEvent.getCoach(),coach);
+        AlphaSystem.getSystem().ResetDB();
 
     }
 
@@ -69,6 +73,7 @@ public class AddCoachToTeamEventTest {
         AddCoachToTeamEvent addCoachToTeamEvent = new AddCoachToTeamEvent(coach,team);
         addCoachToTeamEvent.setCoach(coach1);
         assertEquals(addCoachToTeamEvent.getCoach(),coach1);
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -77,6 +82,7 @@ public class AddCoachToTeamEventTest {
         Team team = new Team("HBS",new TeamOwner(new Member("","","","roi")),null);
         AddCoachToTeamEvent addCoachToTeamEvent = new AddCoachToTeamEvent(coach,team);
         assertEquals(addCoachToTeamEvent.getTeam(),team);
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -87,6 +93,7 @@ public class AddCoachToTeamEventTest {
         AddCoachToTeamEvent addCoachToTeamEvent = new AddCoachToTeamEvent(coach,team);
         addCoachToTeamEvent.setTeam(team1);
         assertEquals(addCoachToTeamEvent.getTeam(),team1);
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -95,6 +102,7 @@ public class AddCoachToTeamEventTest {
         Team team = new Team("HBS",new TeamOwner(new Member("","","","roi")),null);
         AddCoachToTeamEvent addCoachToTeamEvent = new AddCoachToTeamEvent(coach,team);
         addCoachToTeamEvent.getDateTime();
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -105,5 +113,6 @@ public class AddCoachToTeamEventTest {
         AddCoachToTeamEvent addCoachToTeamEvent = new AddCoachToTeamEvent(coach,team);
         addCoachToTeamEvent.setDateTime(localDateTime);
         assertEquals(localDateTime,addCoachToTeamEvent.getDateTime());
+        AlphaSystem.getSystem().ResetDB();
     }
 }

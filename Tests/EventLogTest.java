@@ -30,6 +30,7 @@ public class EventLogTest {
         EventLog eventLog = AlphaSystem.getSystem().getLog();
         assertEquals(endGameEvent,eventLog.getEvents().get(0));
         assertEquals(goalEvent,eventLog.getEvents().get(1));
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Deprecated
@@ -48,7 +49,7 @@ public class EventLogTest {
         EventLog eventLog = AlphaSystem.getSystem().getLog();
         eventLog.removeEvent(goalEvent);
         assertEquals(endGameEvent.toString(),eventLog.getEvents().get(0).toString());
-
+        AlphaSystem.getSystem().ResetDB();
     }
 
 
@@ -69,6 +70,7 @@ public class EventLogTest {
         EventLog eventLog = AlphaSystem.getSystem().getLog();
 
         assertEquals(endGameEvent.toString(),eventLog.getEvents().get(0).toString());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -92,6 +94,6 @@ public class EventLogTest {
             assertEquals(event.toString(),eventLog.getEvents().get(counter).toString());
             counter++;
         }
-
+        AlphaSystem.getSystem().ResetDB();
     }
 }
