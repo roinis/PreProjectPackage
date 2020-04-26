@@ -28,6 +28,7 @@ public class FoulEventTest {
                 + " at "
                 + gameTime + ".";
         assertEquals(foulEvent.toString(),eventString);
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Deprecated
@@ -47,6 +48,7 @@ public class FoulEventTest {
                 + gameTime + ".";
         foulEvent.setFouledPlayer(new Player(new Member(null,null,null,"kalo"),null,null));
         assertNotEquals(foulEvent.toString(),eventString);
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Deprecated
@@ -66,6 +68,33 @@ public class FoulEventTest {
                 + gameTime + ".";
         foulEvent.setEventPlayer(new Player(new Member(null,null,null,"kak"),null,null));
         assertNotEquals(foulEvent.toString(),eventString);
+        AlphaSystem.getSystem().ResetDB();
+    }
+    @Deprecated
+    @Test
+    public void getFouledPlayer() {
+        Time gameTime = new Time(0,10,32);
+        Team team = new Team("Maccabi Ha",new TeamOwner(new Member("","","","roi")),null);
+        Player player = new Player(new Member(null,null,null,"Rokaviza ch"),null,null);
+        Player fouledPlayer = new Player(new Member(null,null,null,"john"),null,null);
+        FoulEvent foulEvent = new FoulEvent(gameTime,team,player,fouledPlayer);
+        assertEquals(fouledPlayer,foulEvent.getFouledPlayer());
+        AlphaSystem.getSystem().ResetDB();
+    }
+
+
+    @Deprecated
+    @Test
+    public void setFouledPlayer() {
+
+        Time gameTime = new Time(0,10,32);
+        Team team = new Team("Maccabi Ha",new TeamOwner(new Member("","","","roi")),null);
+        Player player = new Player(new Member(null,null,null,"Rokaviza ch"),null,null);
+        Player fouledPlayer = new Player(new Member(null,null,null,"john"),null,null);
+        FoulEvent foulEvent = new FoulEvent(gameTime,team,player,fouledPlayer);
+        foulEvent.setFouledPlayer(player);
+        assertEquals(player,foulEvent.getFouledPlayer());
+        AlphaSystem.getSystem().ResetDB();
     }
 
 

@@ -169,4 +169,8 @@ public class TeamManager extends Job {
     public void editFullName(String newName){
         getMember().setFull_name(newName);
     }
+
+    public void setName(String name){
+        this.getMember().setFull_name(name);
+    }
 }

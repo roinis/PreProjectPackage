@@ -14,12 +14,14 @@ public class TewwtEventTest {
 
         TewwtEvent tewwtEvent = new TewwtEvent("wattsup");
         assertEquals(tewwtEvent.toString(),"wattsup");
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
     public void getTewwt() {
         TewwtEvent tewwtEvent = new TewwtEvent("wattsup");
         assertEquals(tewwtEvent.getTewwt(),"wattsup");
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -27,5 +29,6 @@ public class TewwtEventTest {
         TewwtEvent tewwtEvent = new TewwtEvent("wattsup");
         tewwtEvent.setTewwt("check");
         assertEquals(tewwtEvent.getTewwt(),"check");
+        AlphaSystem.getSystem().ResetDB();
     }
 }

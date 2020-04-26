@@ -22,6 +22,7 @@ public class TeamCloseEventTest {
                 " has closed" +
                 " at " + closeTeamDate;
         assertEquals(eventString,teamCloseEvent.toString());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -35,6 +36,7 @@ public class TeamCloseEventTest {
                 " at " + closeTeamDate;
         teamCloseEvent.setClosedTeam(new Team("MTA",new TeamOwner(new Member("","","","roi")),null));
         assertNotEquals(eventString,teamCloseEvent.toString());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -48,6 +50,7 @@ public class TeamCloseEventTest {
                 " at " + closeTeamDate;
         teamCloseEvent.setClosedTime(LocalDateTime.of(2020,2,10,18,3,0));
         assertNotEquals(eventString,teamCloseEvent.toString());
+        AlphaSystem.getSystem().ResetDB();
     }
 
 
@@ -57,10 +60,18 @@ public class TeamCloseEventTest {
         LocalDateTime closeTeamDate  = LocalDateTime.of(2020,3,1,15,13,0);
         TeamCloseEvent teamCloseEvent = new TeamCloseEvent(closeTeamDate,team);
         assertEquals(closeTeamDate,teamCloseEvent.getClosedTime());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
     public void setClosedTime() {
+        Team team = new Team("HBS",new TeamOwner(new Member("","","","roi")),null);
+        LocalDateTime closeTeamDate  = LocalDateTime.of(2020,3,1,15,13,0);
+        LocalDateTime closeTeamDate1 = LocalDateTime.of(2020,2,1,15,13,0);
+        TeamCloseEvent teamCloseEvent = new TeamCloseEvent(closeTeamDate,team);
+        teamCloseEvent.setClosedTime(closeTeamDate1);
+        assertEquals(closeTeamDate1,teamCloseEvent.getClosedTime());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -69,6 +80,7 @@ public class TeamCloseEventTest {
         LocalDateTime closeTeamDate  = LocalDateTime.of(2020,3,1,15,13,0);
         TeamCloseEvent teamCloseEvent = new TeamCloseEvent(closeTeamDate,team);
         assertEquals(team,teamCloseEvent.getClosedTeam());
+        AlphaSystem.getSystem().ResetDB();
     }
 
     @Test
@@ -80,5 +92,6 @@ public class TeamCloseEventTest {
         TeamCloseEvent teamCloseEvent = new TeamCloseEvent(closeTeamDate,team);
         teamCloseEvent.setClosedTeam(team1);
         assertEquals(team1,teamCloseEvent.getClosedTeam());
+        AlphaSystem.getSystem().ResetDB();
     }
 }

@@ -53,6 +53,8 @@ public class TeamOwnerTest {
         assertEquals(0,teamOwner.getAppointmentList().size());
         assertNull(member1.getJob("owner"));
         assertNull(member2.getJob("owner"));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -64,49 +66,51 @@ public class TeamOwnerTest {
         assertEquals(Team.Status.close,team.getStatus());
         teamOwner.openTeam();
         assertEquals(Team.Status.open,team.getStatus());
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
     public void addAndRemoveManagersTest() {
-        try {
-            boolean[] permissions1={true,true,true,true};
-            boolean[] permissions2={false,false,false,false};
-            MemberStub member1 = new MemberStub("test", "12345", "12345", "test");
-            MemberStub member2 = new MemberStub("notManager", "12345", "12345", "notManager");
-            MemberStub member3 = new MemberStub("owner", "12345", "12345", "owner");
-            TeamOwner teamOwner = new TeamOwner(member3);
-            member3.addJob(teamOwner);
-            Team team = new Team("hapoel", teamOwner, null);
-            assertTrue(teamOwner.getAppointmentList().isEmpty());
-            teamOwner.addManager("test1",permissions1);
-            assertTrue(teamOwner.getAppointmentList().isEmpty());
-            teamOwner.addManager("test",permissions1);
-            TeamManager manager = (TeamManager) member1.getJob("manager");
-            assertTrue(manager != null);
-            assertTrue(teamOwner.getAppointmentList().contains(manager));
-            teamOwner.addManager("test",permissions1);
-            assertEquals(1, teamOwner.getAppointmentList().size());
-            teamOwner.addManager("owner",permissions1);
-            assertEquals(1, teamOwner.getAppointmentList().size());
-            assertFalse(teamOwner.getAppointmentList().contains(teamOwner));
-            teamOwner.setPermissionsToManager("test",permissions2);
-            assertTrue(manager.getPermissions().isEmpty());
-            teamOwner.editExistingManagerName("test","barda");
-            assertEquals("barda",manager.getMemberFullName());
-            teamOwner.removeManger("test1");
-            assertEquals(1, teamOwner.getAppointmentList().size());
-            teamOwner.removeManger("notManager");
-            assertEquals(1, teamOwner.getAppointmentList().size());
-            TeamManager teamManager=new TeamManager(member2,team,null);
-            member2.addJob(teamManager);
-            teamOwner.removeManger("notManager");
-            assertEquals(1, teamOwner.getAppointmentList().size());
-            teamOwner.removeManger("test");
-            assertFalse(teamOwner.getAppointmentList().contains(manager));
-            assertEquals(0, teamOwner.getAppointmentList().size());
-            assertNull(member1.getJob("manager"));
+        boolean[] permissions1 = {true, true, true, true};
+        boolean[] permissions2 = {false, false, false, false};
+        MemberStub member1 = new MemberStub("test", "12345", "12345", "test");
+        MemberStub member2 = new MemberStub("notManager", "12345", "12345", "notManager");
+        MemberStub member3 = new MemberStub("owner", "12345", "12345", "owner");
+        TeamOwner teamOwner = new TeamOwner(member3);
+        member3.addJob(teamOwner);
+        Team team = new Team("hapoel", teamOwner, null);
+        assertTrue(teamOwner.getAppointmentList().isEmpty());
+        teamOwner.addManager("test1", permissions1);
+        assertTrue(teamOwner.getAppointmentList().isEmpty());
+        teamOwner.addManager("test", permissions1);
+        TeamManager manager = (TeamManager) member1.getJob("manager");
+        assertTrue(manager != null);
+        assertTrue(teamOwner.getAppointmentList().contains(manager));
+        teamOwner.addManager("test", permissions1);
+        assertEquals(1, teamOwner.getAppointmentList().size());
+        teamOwner.addManager("owner", permissions1);
+        assertEquals(1, teamOwner.getAppointmentList().size());
+        assertFalse(teamOwner.getAppointmentList().contains(teamOwner));
+        teamOwner.setPermissionsToManager("test", permissions2);
+        assertTrue(manager.getPermissions().isEmpty());
+        teamOwner.editExistingManagerName("test", "barda");
+        assertEquals("barda", manager.getMemberFullName());
+        teamOwner.removeManger("test1");
+        assertEquals(1, teamOwner.getAppointmentList().size());
+        teamOwner.removeManger("notManager");
+        assertEquals(1, teamOwner.getAppointmentList().size());
+        TeamManager teamManager = new TeamManager(member2, team, null);
+        member2.addJob(teamManager);
+        teamOwner.removeManger("notManager");
+        assertEquals(1, teamOwner.getAppointmentList().size());
+        teamOwner.removeManger("test");
+        assertFalse(teamOwner.getAppointmentList().contains(manager));
+        assertEquals(0, teamOwner.getAppointmentList().size());
+        assertNull(member1.getJob("manager"));
+        AlphaSystem alphaSystem = AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
 
-        }catch (Exception e){};
     }
 
     @Test
@@ -121,6 +125,8 @@ public class TeamOwnerTest {
         teamOwner.addDeposit((double) 500,"Deposit");
         assertTrue(400==budget.getBudget());
         assertTrue(budget.getReports().size()==2);
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -132,6 +138,8 @@ public class TeamOwnerTest {
         assertTrue(team.getTweets().contains("test"));
         teamOwner.deleteTweet(0);
         assertFalse(team.getTweets().contains("test"));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -151,6 +159,8 @@ public class TeamOwnerTest {
         assertEquals("2000-01-01",player.getStringBirthDate());
         teamOwner.removeExistingPlayer("test");
         assertFalse(team.getPlayers().contains(player));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
     @Test
@@ -170,6 +180,8 @@ public class TeamOwnerTest {
         assertEquals("new job",coach.getJobInTheTeam());
         teamOwner.removeExistingCoach("test");
         assertFalse(team.getCoaches().contains(coach));
+        AlphaSystem alphaSystem=AlphaSystem.getSystem();
+        alphaSystem.ResetDB();
     }
 
    @Test
@@ -183,8 +195,19 @@ public class TeamOwnerTest {
        assertEquals("goodtest",stadium1.getStadiumName());
        teamOwner.setNewStadium("test2");
        assertEquals(stadium2,team.getHomeStadium());
+       AlphaSystem alphaSystem=AlphaSystem.getSystem();
+       alphaSystem.ResetDB();
    }
 
+   @Test
+   public void SetNameTest(){
+       MemberStub member = new MemberStub("test", "12345", "12345", "test");
+       TeamOwner teamOwner = new TeamOwner(member);
+       teamOwner.editFullName("good test");
+       assertEquals("good test",teamOwner.getMemberFullName());
+       AlphaSystem alphaSystem=AlphaSystem.getSystem();
+       alphaSystem.ResetDB();
+   }
 
 
 
