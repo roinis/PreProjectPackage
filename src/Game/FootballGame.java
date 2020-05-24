@@ -23,6 +23,19 @@ public class FootballGame implements Subject {
     private MainReferee mainReferee;
     private LinesManReferee linesManLeft;
     private LinesManReferee linesManRight;
+
+    public Season getSeason() {
+        return season;
+    }
+
+    public Team getHome() {
+        return home;
+    }
+
+    public Team getAway() {
+        return away;
+    }
+
     private VarReferee varReferee;
     private int homeGoals;
     private int awayGoals;
@@ -45,12 +58,25 @@ public class FootballGame implements Subject {
     public String getAwayTeamName(){
         return away.getTeamName().toLowerCase();
     }
+    public LocalDateTime getDate(){return date;}
+
+    public int getHomeGoals() {
+        return homeGoals;
+    }
+
+    public int getAwayGoals() {
+        return awayGoals;
+    }
 
     public void homeScoreGoal(){
         this.homeGoals++;
     }
     public void awayScoreGoal(){
         this.awayGoals++;
+    }
+
+    public LinkedList<Event> getEvents() {
+        return events;
     }
 
     public void gameHasEnded(){

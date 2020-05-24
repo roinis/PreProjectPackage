@@ -13,6 +13,10 @@ public class Ticket {
     String Answer;
     String TicketID;
 
+    public String getWrittenByID() {
+        return WrittenBy.getUser_id();
+    }
+
     public Ticket(Member writtenBy, String complaint){
         Answered = false;
         Complaint = complaint;
@@ -41,7 +45,7 @@ public class Ticket {
        return Complaint;
     }
 
-    public String getAnswer(String answer){
+    public String getAnswer(){
         return Answer;
     }
 

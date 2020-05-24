@@ -30,6 +30,7 @@ public class League {
         alphaSystem.AddtoDB(1,this);
     }
 
+    public LinkedList<Season> getAllSeasons(){return seasons;}
     public void addRefereesToSeason(Season season){
         season.scheduleMainReferees(leagueReferees);
         season.scheduleLinesMansReferees(leagueLinesmans);

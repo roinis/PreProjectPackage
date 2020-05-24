@@ -27,7 +27,8 @@ public class Member extends User implements Observer {
     private List<Player> playersFollowed;
     private List<Coach> coachesFollowed;
 
-    public Member(String user_name,String user_password,String user_id,String full_name){
+
+    public Member(String user_name, String user_password, String user_id, String full_name){
         this.user_name=user_name;
         this.user_password=user_password;
         this.user_id=user_id;
@@ -42,6 +43,26 @@ public class Member extends User implements Observer {
         coachesFollowed = new ArrayList<>();
         online=false;
         blocked = false;
+    }
+
+    public boolean isBlocked() {
+        return blocked;
+    }
+
+    public List<String> getSearchHistory() {
+        return searchHistory;
+    }
+
+    public List<Team> getTeamsFollowed() {
+        return teamsFollowed;
+    }
+
+    public List<Player> getPlayersFollowed() {
+        return playersFollowed;
+    }
+
+    public List<Coach> getCoachesFollowed() {
+        return coachesFollowed;
     }
 
     public String getUser_password(){

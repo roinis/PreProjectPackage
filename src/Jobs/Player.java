@@ -32,6 +32,14 @@ public class Player extends Job implements Subject {
         alphaSystem.AddtoDB(7,this);
     }
 
+    public LocalDate getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public Position getPosition() {
+        return position;
+    }
+
     public Team getTeam() {
         return team;
     }

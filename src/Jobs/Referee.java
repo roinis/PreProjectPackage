@@ -17,6 +17,11 @@ public class Referee extends Job{
     boolean ActiveStatus;
     Member member;
     boolean Var;
+
+    public boolean isActiveStatus() {
+        return ActiveStatus;
+    }
+
     boolean Line;
     boolean Main;
 
