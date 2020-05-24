@@ -56,6 +56,8 @@ public abstract class User {
         ret.add(String.valueOf(season.getScoringPolicy().getPointPerLoss()));
         return ret;
     }
+
+
     public LinkedList<Pair<String, Integer>> showLeagueTable(String leagueName,int SeasonYear){
         AlphaSystem system= AlphaSystem.getSystem();
         League chosenLeague=(League) system.GetSpecificFromDB(1,leagueName);
