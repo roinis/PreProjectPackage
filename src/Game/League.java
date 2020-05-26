@@ -100,6 +100,15 @@ public class League {
         seasons.add(newSeason);
         return true;
     }
+    public boolean addSeason(Season season){
+
+        for (Season curseason:seasons) {
+            if(curseason.getYear()==season.getYear())
+                return false;
+        }
+        seasons.add(season);
+        return true;
+    }
 
     public Season getSpecSeason(int year){
         for (Season season:seasons) {

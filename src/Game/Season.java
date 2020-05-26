@@ -27,7 +27,11 @@ public class Season {
         return true;
     }
 
-    public boolean setScoringPolicy(int pPerWin,int pPerLoss,int pPerDraw) {
+    public void setTable(LinkedList<LeaguePosition> positions) {
+        this.table = new LeagueTable(positions);
+    }
+
+    public boolean setScoringPolicy(int pPerWin, int pPerLoss, int pPerDraw) {
         if(games.size()!=0)
             return false;
         this.scoringPolicy = new ScoringPolicy(pPerWin,pPerLoss,pPerDraw);
@@ -159,6 +163,10 @@ public class Season {
 
         LocalDateTime randomDate = LocalDateTime.of(year,month,Day,hour,minute,0);
         return randomDate;
+    }
+
+    public void addGame(FootballGame game){
+        games.add(game);
     }
 
     public SchedulingPolicy getSchedulingPolicy() {

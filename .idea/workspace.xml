@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="285a3633-ea31-48e4-a0bb-000234d0f3ad" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="285a3633-ea31-48e4-a0bb-000234d0f3ad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/System/restoreFromDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Association/Budget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Association/Budget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/League.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/League.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/LeagueTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/LeagueTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Season.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Season.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/System/BetaDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/InsertToDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/User/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dbAccess/IdBAccess.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dbAccess/database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dbAccess/database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dbAccess/mainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dbAccess/mainTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,212 +24,32 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/PreProjectPackage$All_in_PreProjectPackage.ic" NAME="All in PreProjectPackage Coverage Results" MODIFIED="1587934026952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/AssociationMemberTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="9" column="34" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/EventLogTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="103" column="1" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
-              <folding>
-                <element signature="e#2249#2250#0" expanded="true" />
-                <element signature="e#2297#2298#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Events/EventLog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
-              <folding>
-                <element signature="e#870#871#0" expanded="true" />
-                <element signature="e#921#922#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Jobs/Player.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="605">
-              <caret line="160" column="38" selection-start-line="160" selection-start-column="26" selection-end-line="160" selection-end-column="38" />
-              <folding>
-                <element signature="method#Player#0;class#Player#0" />
-                <element signature="method#addTweet#0;class#Player#0" />
-                <element signature="method#unregister#0;class#Player#0" />
-                <element signature="method#notifyObserver#0;class#Player#0" />
-                <element signature="method#addToTeam#0;class#Player#0" />
-                <element signature="method#removeFromTeam#0;class#Player#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Jobs/Coach.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="101" column="63" selection-start-line="101" selection-start-column="51" selection-end-line="101" selection-end-column="63" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/System/Login.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/LoginTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="13" column="26" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>getStadiumName</find>
-      <find>getCity</find>
-      <find>fanObservers</find>
-      <find>getTeam</find>
-      <find>getStringBirthDate</find>
-      <find>setTeam</find>
-      <find>getPositionName</find>
-      <find>addTweet</find>
-      <find>deleteTweet</find>
-      <find>register</find>
-      <find>addToTeam</find>
-      <find>removeFromTeam</find>
-      <find>editFullName</find>
-      <find>editPosition</find>
-      <find>setCertification</find>
-    </findStrings>
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
       <list>
-        <option value="$PROJECT_DIR$/Tests/AlphaDatabaseTest.java" />
-        <option value="$PROJECT_DIR$/Tests/AlphaSystemTest.java" />
-        <option value="$PROJECT_DIR$/Tests/AssociationMemberTest.java" />
-        <option value="$PROJECT_DIR$/Tests/BudgetExceptionEventTest.java" />
-        <option value="$PROJECT_DIR$/Tests/EndGameEventTest.java" />
-        <option value="$PROJECT_DIR$/Tests/FootballGameTest.java" />
-        <option value="$PROJECT_DIR$/Tests/FoulEventTest.java" />
-        <option value="$PROJECT_DIR$/Tests/GameDelayedEventTest.java" />
-        <option value="$PROJECT_DIR$/Tests/GameEventTest.java" />
-        <option value="$PROJECT_DIR$/Tests/GameReLocationEventTest.java" />
-        <option value="$PROJECT_DIR$/Tests/GoalEventTest.java" />
-        <option value="$PROJECT_DIR$/Tests/InjuryEventTest.java" />
-        <option value="$PROJECT_DIR$/Tests/LeaguePositionTest.java" />
-        <option value="$PROJECT_DIR$/Tests/LeagueTest.java" />
-        <option value="$PROJECT_DIR$/Tests/NewNominationEventTest.java" />
-        <option value="$PROJECT_DIR$/Tests/OffsideEventTest.java" />
-        <option value="$PROJECT_DIR$/Tests/RedCardEventTest.java" />
-        <option value="$PROJECT_DIR$/Tests/RegisterTest.java" />
-        <option value="$PROJECT_DIR$/Tests/RemoveCoachFromTeamEventTest.java" />
-        <option value="$PROJECT_DIR$/Tests/RemoveNominationEventTest.java" />
-        <option value="$PROJECT_DIR$/Tests/RemovePlayerFromTeamEventTest.java" />
-        <option value="$PROJECT_DIR$/Tests/SearchTest.java" />
-        <option value="$PROJECT_DIR$/Tests/SeasonTest.java" />
-        <option value="$PROJECT_DIR$/Tests/StartGameEventTest.java" />
-        <option value="$PROJECT_DIR$/Tests/SubstitutionEventTest.java" />
-        <option value="$PROJECT_DIR$/Tests/TeamCloseEventTest.java" />
-        <option value="$PROJECT_DIR$/Tests/TeamReOpenEventTest.java" />
-        <option value="$PROJECT_DIR$/Tests/TewwtEventTest.java" />
-        <option value="$PROJECT_DIR$/Tests/UserInformationTest.java" />
-        <option value="$PROJECT_DIR$/Tests/UserTest.java" />
-        <option value="$PROJECT_DIR$/Tests/VisitorStub.java" />
-        <option value="$PROJECT_DIR$/Tests/VisitorTest.java" />
-        <option value="$PROJECT_DIR$/Tests/YellowCardEventTest.java" />
-        <option value="$PROJECT_DIR$/Tests/User2Test.java" />
-        <option value="$PROJECT_DIR$/Tests/jobTest.java" />
-        <option value="$PROJECT_DIR$/Tests/BudgetTest.java" />
-        <option value="$PROJECT_DIR$/src/Game/Stadium.java" />
-        <option value="$PROJECT_DIR$/Tests/StadiumTest.java" />
-        <option value="$PROJECT_DIR$/src/Game/Team.java" />
-        <option value="$PROJECT_DIR$/Tests/TeamTest.java" />
-        <option value="$PROJECT_DIR$/src/Jobs/TeamManager.java" />
-        <option value="$PROJECT_DIR$/Tests/PlayerTest.java" />
-        <option value="$PROJECT_DIR$/src/Jobs/Coach.java" />
-        <option value="$PROJECT_DIR$/Tests/CoachTest.java" />
-        <option value="$PROJECT_DIR$/Tests/TeamManagerTest.java" />
-        <option value="$PROJECT_DIR$/Tests/TeamOwnerTest.java" />
-        <option value="$PROJECT_DIR$/src/users.txt" />
-        <option value="$PROJECT_DIR$/Tests/MemberTest.java" />
-        <option value="$PROJECT_DIR$/Tests/LoginTest.java" />
-        <option value="$PROJECT_DIR$/Tests/EventLogTest.java" />
-        <option value="$PROJECT_DIR$/src/Events/EventLog.java" />
+        <option value="Class" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="978" />
-    <option name="height" value="1048" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="PreProjectPackage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PreProjectPackage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PreProjectPackage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PreProjectPackage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PreProjectPackage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PreProjectPackage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Events" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PreProjectPackage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PreProjectPackage" type="462c0819:PsiDirectoryNode" />
-              <item name="Tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-    </panes>
+  <component name="ProjectId" id="1cPqPEMD5cKPEp5rgVy2yNkH01W" />
+  <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587934061033" />
@@ -227,19 +60,20 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="JUnit.All in PreProjectPackage">
+  <component name="RunManager" selected="Application.mainTest">
+    <configuration name="mainTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dbAccess.mainTest" />
+      <module name="PreProjectPackage" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dbAccess.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="All in PreProjectPackage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PreProjectPackage" />
       <option name="PACKAGE_NAME" value="" />
@@ -252,15 +86,6 @@
       <module name="PreProjectPackage" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BudgetTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CoachTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PreProjectPackage" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CoachTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -286,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.mainTest" />
         <item itemvalue="JUnit.All in PreProjectPackage" />
         <item itemvalue="JUnit.EventLogTest" />
         <item itemvalue="JUnit.TeamOwnerTest" />
         <item itemvalue="JUnit.BudgetTest" />
-        <item itemvalue="JUnit.CoachTest" />
       </list>
     </recent_temporary>
   </component>
@@ -305,6 +130,7 @@
       <option name="presentableId" value="Default" />
       <updated>1587925626761</updated>
       <workItem from="1587925628243" duration="7391000" />
+      <workItem from="1590440588551" duration="22101000" />
     </task>
     <servers />
   </component>
@@ -340,46 +166,62 @@
       <configuration name="All in PreProjectPackage" configurationId="JUnit" />
     </history-entry>
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7391000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" weight="0.19971672" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" weight="0.3286119" />
-      <window_info anchor="bottom" id="Messages" weight="0.3286119" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.10339943" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Coverage" side_tool="true" visible="true" weight="0.3295302" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add beta database + add getters to some fields in other cllases" />
+    <option name="LAST_COMMIT_MESSAGE" value="add beta database + add getters to some fields in other cllases" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1590457419767">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1590457419767" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590441976054">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1590441976054" />
+    <state x="524" y="115" key="#xdebugger.evaluate" timestamp="1590452954327">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="524" y="115" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1590452954327" />
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1590453367414">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590453367414" />
+    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1590453367414">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590453367414" />
+    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1590453367413">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590453367413" />
+    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1590453367414">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590453367414" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1590453367701">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590453367701" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1590453367701">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1590453367701" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1590453367701">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1590453367701" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1590453367701">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1590453367701" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1590341601646">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1590341601646" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -387,460 +229,15 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Tests/TeamManagerTest.java</url>
           <line>253</line>
-          <properties />
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/dbAccess/mainTest.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Tests/EndGameEventTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/FootballGameTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/FoulEventTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/GameDelayedEventTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/GameEventTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/GameReLocationEventTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/GoalEventTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/InjuryEventTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/LeaguePositionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/LeagueTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/NewNominationEventTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/OffsideEventTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/RedCardEventTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/RegisterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/RemoveCoachFromTeamEventTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/RemoveNominationEventTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/RemovePlayerFromTeamEventTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/SearchTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/SeasonTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/StartGameEventTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/SubstitutionEventTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/TeamCloseEventTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/UserInformationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/UserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/VisitorStub.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/VisitorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/YellowCardEventTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/TeamReOpenEventTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/TewwtEventTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Stadium.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="30" column="30" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/TeamTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2104">
-          <caret line="284" selection-start-line="284" selection-end-line="284" />
-          <folding>
-            <element signature="e#18425#18426#0" expanded="true" />
-            <element signature="e#18473#18474#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Team.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="471" selection-start-line="471" selection-end-line="471" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Jobs/TeamManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="149" selection-start-line="149" selection-end-line="149" />
-          <folding>
-            <element signature="method#TeamManager#0;class#TeamManager#0" />
-            <element signature="method#checkPermissions#0;class#TeamManager#0" />
-            <element signature="method#openTeam#0;class#TeamManager#0" />
-            <element signature="method#closeTeam#0;class#TeamManager#0" />
-            <element signature="method#addWithdraw#0;class#TeamManager#0" />
-            <element signature="method#addDeposit#0;class#TeamManager#0" />
-            <element signature="method#addTweet#0;class#TeamManager#0" />
-            <element signature="method#deleteTweet#0;class#TeamManager#0" />
-            <element signature="method#addNewPlayer#0;class#TeamManager#0" />
-            <element signature="method#removeExistingPlayer#0;class#TeamManager#0" />
-            <element signature="method#editExistingPlayerName#0;class#TeamManager#0" />
-            <element signature="method#editExistingPlayerPosition#0;class#TeamManager#0" />
-            <element signature="method#editExistingPlayerBirthday#0;class#TeamManager#0" />
-            <element signature="method#addNewCoach#0;class#TeamManager#0" />
-            <element signature="method#removeExistingCoach#0;class#TeamManager#0" />
-            <element signature="method#editExistingCoachName#0;class#TeamManager#0" />
-            <element signature="method#editExistingCoachCertification#0;class#TeamManager#0" />
-            <element signature="method#editExistingCoachJobInTeam#0;class#TeamManager#0" />
-            <element signature="method#editExistingStadiumName#0;class#TeamManager#0" />
-            <element signature="method#setNewStadium#0;class#TeamManager#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Jobs/TeamOwner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-407">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="method#TeamOwner#0;class#TeamOwner#0" />
-            <element signature="method#addOwner#0;class#TeamOwner#0" />
-            <element signature="method#removeOwner#0;class#TeamOwner#0" />
-            <element signature="method#addManager#0;class#TeamOwner#0" />
-            <element signature="method#removeManger#0;class#TeamOwner#0" />
-            <element signature="method#checker#0;class#TeamOwner#0" />
-            <element signature="method#choosePermissions#0;class#TeamOwner#0" />
-            <element signature="method#addWithdraw#0;class#TeamOwner#0" />
-            <element signature="method#setPermissionsToManager#0;class#TeamOwner#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/TeamManagerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="240" column="33" selection-start-line="240" selection-start-column="33" selection-end-line="240" selection-end-column="33" />
-          <folding>
-            <element signature="method#teamManagerTest#0;class#TeamManagerTest#0" />
-            <element signature="method#openAndCloseTeamTest#0;class#TeamManagerTest#0" />
-            <element signature="method#budgetTest#0;class#TeamManagerTest#0" />
-            <element signature="method#tweetsTest#0;class#TeamManagerTest#0" />
-            <element signature="method#playerTest#0;class#TeamManagerTest#0" />
-            <element signature="method#coachTest#0;class#TeamManagerTest#0" />
-            <element signature="method#stadiumTest#0;class#TeamManagerTest#0" />
-            <element signature="method#setNameTest#0;class#TeamManagerTest#0" />
-            <element signature="method#SetManagersTest#0;class#TeamManagerTest#0" />
-            <element signature="class#MemberStub#0;class#TeamManagerTest#0" />
-            <element signature="method#choosePermissions#0;class#TeamManagerTest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/StadiumTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#stadiumDetailsTest#0;class#StadiumTest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/PlayerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-          <folding>
-            <element signature="method#playerGettersTest#0;class#PlayerTest#0" />
-            <element signature="method#settersTest#0;class#PlayerTest#0" />
-            <element signature="method#tweetsTest#0;class#PlayerTest#0" />
-            <element signature="method#observerTest#0;class#PlayerTest#0" />
-            <element signature="method#TeamTest#0;class#PlayerTest#0" />
-            <element signature="class#MemberStub#0;class#PlayerTest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/jobTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/TeamOwnerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="113" column="5" selection-start-line="113" selection-start-column="5" selection-end-line="113" selection-end-column="5" />
-          <folding>
-            <element signature="method#setTeamTest#0;class#TeamOwnerTest#0" />
-            <element signature="method#addAndRemoveOwnerTest#0;class#TeamOwnerTest#0" />
-            <element signature="method#openAndCloseTeamTest#0;class#TeamOwnerTest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/User2Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/users.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/BudgetTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/CoachTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-313">
-          <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
-          <folding>
-            <element signature="method#tweetsTest#0;class#CoachTest#0" />
-            <element signature="class#MemberStub#0;class#CoachTest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/MemberTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4148">
-          <caret line="261" selection-start-line="261" selection-end-line="261" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/AssociationMemberTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="9" column="34" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/LoginTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/EventLogTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="103" column="1" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
-          <folding>
-            <element signature="e#2249#2250#0" expanded="true" />
-            <element signature="e#2297#2298#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Events/EventLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
-          <folding>
-            <element signature="e#870#871#0" expanded="true" />
-            <element signature="e#921#922#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Jobs/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="160" column="38" selection-start-line="160" selection-start-column="26" selection-end-line="160" selection-end-column="38" />
-          <folding>
-            <element signature="method#Player#0;class#Player#0" />
-            <element signature="method#addTweet#0;class#Player#0" />
-            <element signature="method#unregister#0;class#Player#0" />
-            <element signature="method#notifyObserver#0;class#Player#0" />
-            <element signature="method#addToTeam#0;class#Player#0" />
-            <element signature="method#removeFromTeam#0;class#Player#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Jobs/Coach.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="101" column="63" selection-start-line="101" selection-start-column="51" selection-end-line="101" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
   </component>
   <component name="masterDetails">
     <states>

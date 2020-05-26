@@ -17,6 +17,10 @@ public class LeagueTable {
         this.leagueTable=new LinkedList<>();
     }
 
+    public LeagueTable(LinkedList<LeaguePosition> positions){
+        this.leagueTable=positions;
+    }
+
     public boolean addTeam(Team team) {
         for (LeaguePosition position:leagueTable) {
             if(position.getTeam().equals(team))

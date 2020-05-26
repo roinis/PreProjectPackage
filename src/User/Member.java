@@ -287,6 +287,10 @@ public class Member extends User implements Observer {
         }
     }
 
+    public void followTeam(Team team){
+        teamsFollowed.add(team);
+    }
+
     public void followFootballGame(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Please insert the League name:");

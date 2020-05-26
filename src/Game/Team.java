@@ -38,7 +38,7 @@ public class Team implements Subject {
         jobsObservers=new ArrayList<>();
         tweets=new ArrayList<>();
         budget=new Budget(this);
-        owner.setTeam(this);
+        //owner.setTeam(this);
         owners.add(owner);
         jobsObservers.add(owner.getMember());
         AlphaSystem alphaSystem= AlphaSystem.getSystem();
@@ -51,6 +51,10 @@ public class Team implements Subject {
 
     public String getTeamName() {
         return teamName;
+    }
+
+    public void setBudget(Budget budget) {
+        this.budget = budget;
     }
 
     public boolean setTeamName(String teamName) {
